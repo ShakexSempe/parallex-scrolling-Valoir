@@ -12,11 +12,12 @@
 }
 
 .section-div {
+    width: 100%;
     height: 40vh;
     font-size: 1.5em;
     font-family: sans-serif;
-    margin: 20px;
-    padding: 20px;
+    padding: 30px;
+    background: #f4f4f4;
 
     h3 {
         text-align: center;
@@ -36,19 +37,20 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: rgba(51, 51, 51, 0.699);
+        background: rgba(51, 51, 51, 0.842);
         color: #fff;
         width: 50%;
         height: auto;
         text-align: center;
+        border-radius: 10px
 
     }
 }
 
 .parallax-1 {
-    background: url('../img/unit-3.jpg') no-repeat;
+    background: url('../img/tim-foster-BeDY9KuP0sI-unsplash.jpg') no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-attachment: fixed;
 }
 
@@ -65,8 +67,14 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 500px;
 }
+.parallax-4 {
+    background: url('../img/tim-foster-BeDY9KuP0sI-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 
+    
+}
 
 @import 'mobile';

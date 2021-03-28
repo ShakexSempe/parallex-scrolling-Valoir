@@ -10,11 +10,12 @@
   font-size: 24px; }
 
 .section-div {
+  width: 100%;
   height: 40vh;
   font-size: 1.5em;
   font-family: sans-serif;
-  margin: 20px;
-  padding: 20px; }
+  padding: 30px;
+  background: #f4f4f4; }
   .section-div h3 {
     text-align: center;
     margin-bottom: 1em; }
@@ -29,16 +30,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: rgba(51, 51, 51, 0.699);
+    background: rgba(51, 51, 51, 0.842);
     color: #fff;
     width: 50%;
     height: auto;
-    text-align: center; }
+    text-align: center;
+    border-radius: 10px; }
 
 .parallax-1 {
-  background: url("../img/unit-3.jpg") no-repeat;
+  background: url("../img/tim-foster-BeDY9KuP0sI-unsplash.jpg") no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-attachment: fixed; }
 
 .parallax-2 {
@@ -51,8 +53,13 @@
   background: url("../img/sergey-pesterev-9-5-WYEBDz0-unsplash.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  height: 500px; }
+  background-attachment: fixed; }
+
+.parallax-4 {
+  background: url("../img/tim-foster-BeDY9KuP0sI-unsplash.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
 
 @media (max-width: 500px) {
   .parallax article {
@@ -63,11 +70,14 @@
       font-size: 0.7em; }
   .section-div {
     height: 50vh;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-family: sans-serif;
-    margin: 20px;
-    padding: 20px;
     overflow-y: auto; }
     .section-div p {
       font-size: 0.6em;
-      line-height: 2; } }
+      line-height: 2; }
+  .parallax-4 article p {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+    padding: 5px; } }
