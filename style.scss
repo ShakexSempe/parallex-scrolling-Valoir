@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Play&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -46,6 +47,14 @@
         text-align: center;
         border-radius: 10px;
         z-index: 1;
+
+        h2{
+            font-family: 'Play', sans-serif;
+            font-size: 3em;
+        }
+        p {
+            font-family: 'Arvo', serif;
+        }
     }
 }
 
