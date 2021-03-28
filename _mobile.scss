@@ -1,0 +1,29 @@
+@media(max-width:500px) {
+
+    .parallax {
+        article {
+            height: auto;
+            width: 80%;
+            overflow-y: auto;
+
+            p {
+                font-size: 0.7em;
+            }
+
+        }
+    }
+
+    .section-div {
+        height: 50vh;
+        font-size: 1.5em;
+        font-family: sans-serif;
+        margin: 20px;
+        padding: 20px;
+        overflow-y: auto;
+
+        p {
+            font-size: 0.6em;
+            line-height: 2;
+        }
+    }
+}
