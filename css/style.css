@@ -15,7 +15,8 @@
   font-size: 1.5em;
   font-family: sans-serif;
   padding: 30px;
-  background: #f4f4f4; }
+  background: #000;
+  color: #eee; }
   .section-div h3 {
     text-align: center;
     margin-bottom: 1em; }
@@ -25,17 +26,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
   .parallax article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: rgba(51, 51, 51, 0.842);
+    background: rgba(24, 23, 23, 0.616);
     color: #fff;
     width: 50%;
     height: auto;
     text-align: center;
-    border-radius: 10px; }
+    border-radius: 10px;
+    z-index: 1; }
+
+.parallax::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  opacity: 0.6; }
 
 .parallax-1 {
   background: url("../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg") no-repeat;
