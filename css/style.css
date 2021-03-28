@@ -38,7 +38,7 @@
     border-radius: 10px; }
 
 .parallax-1 {
-  background: url("../img/tim-foster-BeDY9KuP0sI-unsplash.jpg") no-repeat;
+  background: url("../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg") no-repeat;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed; }
@@ -56,7 +56,7 @@
   background-attachment: fixed; }
 
 .parallax-4 {
-  background: url("../img/tim-foster-BeDY9KuP0sI-unsplash.jpg") no-repeat;
+  background: url("../img/qusv-yang-EFsactqua1g-unsplash.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
@@ -69,13 +69,18 @@
     .parallax article p {
       font-size: 0.7em; }
   .section-div {
-    height: 50vh;
+    height: auto;
     font-size: 1.3em;
     font-family: sans-serif;
     overflow-y: auto; }
     .section-div p {
       font-size: 0.6em;
       line-height: 2; }
+  .parallax-2 article {
+    height: auto;
+    display: flex; }
+    .parallax-2 article h2 {
+      font-size: 1.3em; }
   .parallax-4 article p {
     font-size: 1em;
     line-height: 1.6;

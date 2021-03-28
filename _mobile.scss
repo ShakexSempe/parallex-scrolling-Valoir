@@ -14,7 +14,7 @@
     }
 
     .section-div {
-        height: 50vh;
+        height: auto;
         font-size: 1.3em;
         font-family: sans-serif;
         overflow-y: auto;
@@ -23,6 +23,18 @@
             font-size: 0.6em;
             line-height: 2;
         }
+    }
+
+    .parallax-2 {
+    article{
+        height: auto;
+        display: flex;
+
+        h2{
+            font-size: 1.3em;
+        }
+        
+    }
     }
 
     .parallax-4 {
