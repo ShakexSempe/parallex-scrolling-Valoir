@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Play&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Play&family=Titillium+Web:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +18,13 @@
   padding: 30px;
   background: #000;
   color: #eee; }
-  .section-div h3 {
+  .section-div h3, .section-div p {
     text-align: center;
     margin-bottom: 1em; }
+  .section-div article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
 
 .parallax {
   display: flex;
@@ -44,7 +48,7 @@
       font-family: 'Play', sans-serif;
       font-size: 3em; }
     .parallax article p {
-      font-family: 'Arvo', serif; }
+      font-family: 'Titillium Web', sans-serif; }
 
 .parallax::before {
   content: '';
@@ -67,15 +71,32 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
+  .parallax-2 article h2 {
+    margin-bottom: 1em; }
+  .parallax-2 article p {
+    font-size: 1em; }
 
 .parallax-3 {
-  background: url("../img/sergey-pesterev-9-5-WYEBDz0-unsplash.jpg") no-repeat;
+  background: url("../img/jackson-hendry-eodA_8CTOFo-unsplash.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
+  .parallax-3 article {
+    transform: scale(0.9);
+    animation: git 1.5s linear infinite; }
+  .parallax-3 article:hover {
+    transform: scale(1); }
+  .parallax-3 a {
+    color: #fff;
+    text-decoration: none; }
+
+@keyframes git {
+  50% {
+    color: green;
+    transform: scale(1); } }
 
 .parallax-4 {
-  background: url("../img/qusv-yang-EFsactqua1g-unsplash.jpg") no-repeat;
+  background: url("../img/sergey-pesterev-9-5-WYEBDz0-unsplash.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
@@ -94,6 +115,8 @@
     font-size: 1.3em;
     font-family: sans-serif;
     overflow-y: auto; }
+    .section-div article {
+      flex-direction: column; }
     .section-div p {
       font-size: 0.6em;
       line-height: 2; }
