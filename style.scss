@@ -10,6 +10,7 @@
     margin: 0 auto;
     background: #f9f9f9;
     font-size: 24px;
+    overflow: hidden;
 }
 
 .section-div {
@@ -21,9 +22,18 @@
     background: #000;
     color: #eee;
 
-    h3, p {
+    h3 {
         text-align: center;
         margin-bottom: 1em;
+        font-family: 'Play', sans-serif;
+        font-size: 1.5em;
+        
+    }
+    h4{
+        text-decoration: underline;
+    }
+    ul{
+        font-family: 'Titillium Web', sans-serif;
     }
 
     article{
@@ -114,30 +124,33 @@
 
     article {
         transform: scale(0.9);
-        animation: git 1.5s linear infinite;
+        transition: all .2s ease-in-out;
     }
     article:hover{
         transform: scale(1);
+        transition: all .2s ease-in-out;
     }
 
     a{
         color: #fff;
         text-decoration: none;
     }
-    @keyframes git {
-        50% {
-            color: green;
-            transform: scale(1);
-        }
-    }
+    
 }
 .parallax-4 {
-    background: url('../img/sergey-pesterev-9-5-WYEBDz0-unsplash.jpg') no-repeat;
+    background: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
     
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+    background: #000;
 }
 
 @import 'mobile';

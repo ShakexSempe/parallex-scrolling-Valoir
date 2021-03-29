@@ -25,7 +25,12 @@
 
         article{
             flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
             
+            .skills-end{
+                margin: 1em;
+            }
         }
 
         p {
@@ -51,9 +56,12 @@
             p {
                 font-size: 1em;
                 line-height: 1.6;
-                text-align: left;
                 padding: 5px;
             }
         }
+    }
+
+    footer{
+        padding: 5px;
     }
 }
