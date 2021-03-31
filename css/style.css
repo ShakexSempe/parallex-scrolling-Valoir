@@ -73,6 +73,14 @@
   background-position: bottom;
   background-attachment: fixed; }
 
+.parallax-1-1 {
+  background: url("../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed; }
+  .parallax-1-1 h2 {
+    margin-bottom: 2em; }
+
 .parallax-2 {
   background: url("../img/jackson-hendry-eodA_8CTOFo-unsplash.jpg") no-repeat;
   background-size: cover;
@@ -84,7 +92,7 @@
     font-size: 1em; }
 
 .parallax-3 {
-  background: url("../img/jackson-hendry-eodA_8CTOFo-unsplash.jpg") no-repeat;
+  background: url("../img/milky-way2.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
