@@ -47,7 +47,7 @@ body {
     flex-direction: column;
     justify-content: center;
     background: rgba(24, 23, 23, 0.616);
-    color: #fff;
+    color: #ddd;
     width: 50%;
     height: auto;
     text-align: center;
@@ -55,7 +55,8 @@ body {
     z-index: 1; }
     .parallax article h2 {
       font-family: 'Play', sans-serif;
-      font-size: 3em; }
+      font-size: 3em;
+      text-shadow: 1px 1px 5px skyblue; }
     .parallax article p {
       font-family: 'Titillium Web', sans-serif; }
 
@@ -152,13 +153,17 @@ body {
     background-position: bottom;
     background-attachment: fixed;
     opacity: .3; }
+  .parallax-4 p {
+    text-shadow: 0 0 3px lightgreen; }
 
 footer {
   width: 100vw;
   text-align: center;
   font-size: 1.2em;
   color: #fff;
-  background: #000; }
+  background: #000;
+  text-shadow: 1px 1px 5px #dc143c;
+  font-family: 'Titillium Web', sans-serif; }
 
 @media (max-width: 500px) {
   .parallax article {
