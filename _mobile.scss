@@ -4,7 +4,6 @@
         article {
             height: auto;
             width: 80%;
-            overflow-y: auto;
 
             h2 {
                 font-size: 1.7em;
@@ -21,7 +20,6 @@
         height: auto;
         font-size: 1.3em;
         font-family: sans-serif;
-        overflow-y: auto;
 
         article{
             flex-direction: column;
@@ -49,6 +47,19 @@
         }
         
     }
+    };
+
+    .parallax-3 {
+        overflow: hidden;
+        article {
+            height: 5.2em;
+            width: 5.2em;
+    
+            i {
+                font-size: 4em;
+            }
+        }
+        
     }
 
     .parallax-4 {

@@ -127,10 +127,36 @@ body {
   background-attachment: fixed; }
   .parallax-3 article {
     transform: scale(0.9);
-    transition: all .2s ease-in-out; }
+    transition: all .2s ease-in-out;
+    background: transparent;
+    height: 7em;
+    width: 7em;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+    position: relative; }
+    .parallax-3 article::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid lightgreen;
+      border-radius: 100%;
+      animation: pulse 2s infinite ease-in-out;
+      opacity: 0; }
+
+@keyframes pulse {
+  30% {
+    opacity: 1; }
+  100% {
+    transform: scale(1.15);
+    opacity: 0; } }
+    .parallax-3 article i {
+      font-size: 6em; }
   .parallax-3 article:hover {
     transform: scale(1);
-    transition: all .2s ease-in-out; }
+    transition: all .3s ease-in-out; }
   .parallax-3 a {
     color: #fff;
     text-decoration: none; }
@@ -168,8 +194,7 @@ footer {
 @media (max-width: 500px) {
   .parallax article {
     height: auto;
-    width: 80%;
-    overflow-y: auto; }
+    width: 80%; }
     .parallax article h2 {
       font-size: 1.7em; }
     .parallax article p {
@@ -177,8 +202,7 @@ footer {
   .section-div {
     height: auto;
     font-size: 1.3em;
-    font-family: sans-serif;
-    overflow-y: auto; }
+    font-family: sans-serif; }
     .section-div article {
       flex-direction: column;
       justify-content: space-evenly;
@@ -193,6 +217,13 @@ footer {
     display: flex; }
     .parallax-2 article h2 {
       font-size: 1.3em; }
+  .parallax-3 {
+    overflow: hidden; }
+    .parallax-3 article {
+      height: 5.2em;
+      width: 5.2em; }
+      .parallax-3 article i {
+        font-size: 4em; }
   .parallax-4 article p {
     font-size: 1em;
     line-height: 1.6;

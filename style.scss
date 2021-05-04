@@ -172,10 +172,41 @@ body {
     article {
         transform: scale(0.9);
         transition: all .2s ease-in-out;
+        background: transparent;
+        height: 7em;
+        width: 7em;
+        border-radius: 100%;
+        border: 1px solid #ddd;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1px solid lightgreen;
+            border-radius: 100%;
+            animation: pulse 2s infinite ease-in-out;
+            opacity: 0;
+        }
+        @keyframes pulse {
+            30%{
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.15);
+                opacity: 0;
+            }
+        }
+        i {
+            font-size: 6em;
+        }
     }
     article:hover{
         transform: scale(1);
-        transition: all .2s ease-in-out;
+        transition: all .3s ease-in-out;
     }
 
     a{
