@@ -260,11 +260,10 @@ body {
             height: 100%;
             background-image: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg');
             background-size: cover;
-        background-position: bottom;
-        background-attachment: fixed;
-        opacity: .3;
-        animation: para4 20s infinite alternate linear;
-        
+            background-position: bottom;
+            background-attachment: fixed;
+            opacity: .3;
+            animation: para4 20s infinite alternate linear;
         @keyframes para4 {
             50% {
             background-position: 53%;
