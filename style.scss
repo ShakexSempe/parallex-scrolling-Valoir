@@ -68,11 +68,25 @@ body {
         text-align: center;
         border-radius: 10px;
         z-index: 1;
+        position: sticky;
+        top: 10%;
 
         h2{
             font-family: 'Play', sans-serif;
             font-size: 3em;
-            text-shadow: 1px 1px 2px skyblue;
+            background-image: linear-gradient(45deg, #fff, rgb(177, 238, 117),rgb(121, 150, 228), pink, skyblue);
+            background-size: 250%;
+            background-position: left;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            // text-shadow: 1px 1px 2px skyblue;
+            animation: bg 3s linear infinite alternate;
+        }
+        @keyframes bg {
+            100% {
+                background-position: right;
+            }
         }
         p {
             font-family: 'Titillium Web', sans-serif;
@@ -114,8 +128,10 @@ body {
     background-position: bottom;
     background-attachment: fixed;
     opacity: .2;
-
     }
+
+
+    
 
 }
 .parallax-1-1 {
@@ -170,14 +186,17 @@ body {
     background-attachment: fixed;
 
     article {
-        transform: scale(0.9);
+        transform: scale(0.8);
         transition: all .2s ease-in-out;
-        background: transparent;
+        background-image: linear-gradient(45deg, rgb(112, 112, 112),rgb(241, 242, 245));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
         height: 7em;
         width: 7em;
         border-radius: 100%;
-        border: 1px solid #ddd;
-        position: relative;
+        position: sticky;
+        // top: 5%;
 
         &::before {
             content: '';
@@ -186,27 +205,35 @@ body {
             left: 0;
             width: 100%;
             height: 100%;
-            border: 1px solid lightgreen;
+            border: 1px solid #ddd;
             border-radius: 100%;
-            animation: pulse 2s infinite ease-in-out;
+            animation: pulse 2s infinite linear;
             opacity: 0;
+            transform: scale(0.8);
         }
         @keyframes pulse {
-            30%{
+            10%{
                 opacity: 1;
             }
+            
             100% {
-                transform: scale(1.15);
+                transform: scale(1.12);
                 opacity: 0;
             }
         }
         i {
             font-size: 6em;
         }
-    }
-    article:hover{
-        transform: scale(1);
-        transition: all .3s ease-in-out;
+        &:hover{
+            transition: all .3s ease-in-out;
+            transform: scale(1);
+            box-shadow: 2px 3px 2px #ddd;
+
+            border: none;
+            &::before {
+                display: none;
+            }
+        }
     }
 
     a{

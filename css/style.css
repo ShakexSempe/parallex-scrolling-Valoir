@@ -52,11 +52,23 @@ body {
     height: auto;
     text-align: center;
     border-radius: 10px;
-    z-index: 1; }
+    z-index: 1;
+    position: sticky;
+    top: 10%; }
     .parallax article h2 {
       font-family: 'Play', sans-serif;
       font-size: 3em;
-      text-shadow: 1px 1px 2px skyblue; }
+      background-image: linear-gradient(45deg, #fff, #b1ee75, #7996e4, pink, skyblue);
+      background-size: 250%;
+      background-position: left;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: bg 3s linear infinite alternate; }
+
+@keyframes bg {
+  100% {
+    background-position: right; } }
     .parallax article p {
       font-family: 'Titillium Web', sans-serif; }
 
@@ -126,14 +138,16 @@ body {
   background-position: center;
   background-attachment: fixed; }
   .parallax-3 article {
-    transform: scale(0.9);
+    transform: scale(0.8);
     transition: all .2s ease-in-out;
-    background: transparent;
+    background-image: linear-gradient(45deg, #707070, #f1f2f5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     height: 7em;
     width: 7em;
     border-radius: 100%;
-    border: 1px solid #ddd;
-    position: relative; }
+    position: sticky; }
     .parallax-3 article::before {
       content: '';
       position: absolute;
@@ -141,22 +155,27 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      border: 1px solid lightgreen;
+      border: 1px solid #ddd;
       border-radius: 100%;
-      animation: pulse 2s infinite ease-in-out;
-      opacity: 0; }
+      animation: pulse 2s infinite linear;
+      opacity: 0;
+      transform: scale(0.8); }
 
 @keyframes pulse {
-  30% {
+  10% {
     opacity: 1; }
   100% {
-    transform: scale(1.15);
+    transform: scale(1.12);
     opacity: 0; } }
     .parallax-3 article i {
       font-size: 6em; }
-  .parallax-3 article:hover {
-    transform: scale(1);
-    transition: all .3s ease-in-out; }
+    .parallax-3 article:hover {
+      transition: all .3s ease-in-out;
+      transform: scale(1);
+      box-shadow: 2px 3px 2px #ddd;
+      border: none; }
+      .parallax-3 article:hover::before {
+        display: none; }
   .parallax-3 a {
     color: #fff;
     text-decoration: none; }
@@ -217,13 +236,11 @@ footer {
     display: flex; }
     .parallax-2 article h2 {
       font-size: 1.3em; }
-  .parallax-3 {
-    overflow: hidden; }
-    .parallax-3 article {
-      height: 5.2em;
-      width: 5.2em; }
-      .parallax-3 article i {
-        font-size: 4em; }
+  .parallax-3 article {
+    height: 5.2em;
+    width: 5.2em; }
+    .parallax-3 article i {
+      font-size: 4em; }
   .parallax-4 article p {
     font-size: 1em;
     line-height: 1.6;
