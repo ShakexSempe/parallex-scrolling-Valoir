@@ -58,16 +58,16 @@ body {
     .parallax article h2 {
       font-family: 'Play', sans-serif;
       font-size: 3em;
-      background-image: linear-gradient(45deg, #fff, #b1ee75, #7996e4, pink, skyblue);
-      background-size: 250%;
+      background-image: linear-gradient(90deg, #afaeae, #baee86, #8fa8ee, pink, skyblue, #66f066);
+      background-size: 350%;
       background-position: left;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: bg 3s linear infinite alternate; }
+      animation: bg 10s linear infinite alternate; }
 
 @keyframes bg {
-  100% {
+  50% {
     background-position: right; } }
     .parallax article p {
       font-family: 'Titillium Web', sans-serif; }
@@ -135,19 +135,19 @@ body {
 .parallax-3 {
   background: url("../img/qusv-yang-EFsactqua1g-unsplash.jpg") no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 50%;
   background-attachment: fixed; }
   .parallax-3 article {
     transform: scale(0.8);
     transition: all .2s ease-in-out;
-    background-image: linear-gradient(45deg, #707070, #f1f2f5);
+    background-image: linear-gradient(45deg, #4d4a4a, #f1f2f5);
+    background-position: left;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     height: 7em;
     width: 7em;
-    border-radius: 100%;
-    position: sticky; }
+    border-radius: 100%; }
     .parallax-3 article::before {
       content: '';
       position: absolute;
@@ -197,7 +197,12 @@ body {
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
-    opacity: .3; }
+    opacity: .3;
+    animation: para4 10s infinite alternate linear; }
+
+@keyframes para4 {
+  50% {
+    background-position: 53%; } }
   .parallax-4 p {
     text-shadow: 0 0 2px lightgreen; }
 
