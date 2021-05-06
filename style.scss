@@ -136,16 +136,15 @@ body {
         background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
-    opacity: .4;
+    opacity: .3;
     overflow: hidden;
-    animation: scale 20s ease-in-out;
-    animation-fill-mode: forwards;
+    // animation: scale 20s ease-in-out alternate;
 
-    @keyframes scale {
-        100% {
-            transform: scale(2);
-        }
-    }
+    // @keyframes scale {
+    //     100% {
+    //         transform: scale(2);
+    //     }
+    // }
   }
 
 
