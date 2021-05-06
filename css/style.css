@@ -15,17 +15,21 @@ body {
 
 .section-div {
   width: 100%;
-  height: 40vh;
+  height: 80vh;
   font-size: 1.5em;
   font-family: sans-serif;
   padding: 30px;
   background: #000;
-  color: #eee; }
+  color: #eee;
+  position: relative; }
   .section-div h3 {
     text-align: center;
-    margin-bottom: 1em;
     font-family: 'Play', sans-serif;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    padding: 1.5em 0;
+    position: sticky;
+    top: 0;
+    background: #000; }
   .section-div h4 {
     text-decoration: underline; }
   .section-div ul {
@@ -35,7 +39,8 @@ body {
     flex-direction: row;
     justify-content: space-around;
     border-radius: 10px;
-    box-shadow: 2px 3px 4px #ddd; }
+    box-shadow: 2px 3px 4px #ddd;
+    margin-top: 3em; }
 
 .parallax {
   display: flex;
