@@ -106,10 +106,10 @@ body {
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
-    opacity: .2;
+    opacity: .4;
     border-radius: 10px;
-    transform: scale(0.9);
-    animation: scale 8s ease-in alternate infinite; }
+    transform: scale(0.95);
+    animation: scale 4s ease-in alternate infinite; }
 
 @keyframes scale {
   100% {
