@@ -137,17 +137,16 @@ body {
     background-position: bottom;
     background-attachment: fixed;
     opacity: .4;
-    border-radius: 10px;
-    transform: scale(0.95);
-    animation: scale 4s ease-in alternate infinite;
+    overflow: hidden;
+    // animation: scale 20s ease-in-out;
     // animation-fill-mode: forwards;
 
     @keyframes scale {
         100% {
-            transform: scale(1);
+            transform: scale(1.3);
         }
     }
-    }
+  }
 
 
     
