@@ -137,6 +137,16 @@ body {
     background-position: bottom;
     background-attachment: fixed;
     opacity: .2;
+    border-radius: 10px;
+    transform: scale(0.9);
+    animation: scale 8s ease-in alternate infinite;
+    // animation-fill-mode: forwards;
+
+    @keyframes scale {
+        100% {
+            transform: scale(1);
+        }
+    }
     }
 
 
