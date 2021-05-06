@@ -65,7 +65,7 @@ body {
     .parallax article h2 {
       font-family: 'Play', sans-serif;
       font-size: 3em;
-      background-image: linear-gradient(90deg, #afaeae, #baee86, #8fa8ee, pink, skyblue, #66f066);
+      background-image: linear-gradient(90deg, #baee86, #8fa8ee, pink, skyblue, #66f066);
       background-size: 350%;
       background-position: left;
       background-clip: text;
