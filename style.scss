@@ -138,12 +138,12 @@ body {
     background-attachment: fixed;
     opacity: .3;
     overflow: hidden;
-    animation: scale 10s ease-in-out alternate infinite;
+    animation: scale 15s ease-in-out alternate infinite;
     // animation-fill-mode: forwards;
 
     @keyframes scale {
         100% {
-            transform: scale(1.7);
+            transform: scaleX(1.6);
         }
     }
   }
