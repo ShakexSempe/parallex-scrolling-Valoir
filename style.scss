@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Play&family=Titillium+Web:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     overflow-x: hidden;
 
@@ -36,14 +38,16 @@ body {
         top: 0;
         background: #000;
     }
-    h4{
+
+    h4 {
         text-decoration: underline;
     }
-    ul{
+
+    ul {
         font-family: 'Titillium Web', sans-serif;
     }
 
-    article{
+    article {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -52,9 +56,9 @@ body {
         box-shadow: 2px 3px 4px #ddd;
         margin-top: 3em;
 
-        }
     }
-    
+}
+
 
 
 .parallax {
@@ -82,24 +86,26 @@ body {
         top: 10%;
         overflow: visible;
 
-        h2{
+        h2 {
             font-family: 'Play', sans-serif;
             font-size: 3em;
             // background-image: linear-gradient(45deg, #fff, rgb(206, 236, 176),rgb(187, 201, 241), rgb(252, 220, 247), skyblue);
-            background-image: linear-gradient(90deg, rgb(186, 238, 134),rgb(143, 168, 238), pink, skyblue, rgb(102, 240, 102));
+            background-image: linear-gradient(90deg, rgb(186, 238, 134), rgb(143, 168, 238), pink, skyblue, rgb(102, 240, 102));
             background-size: 350%;
             background-position: left;
             background-clip: text;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; 
+            -webkit-text-fill-color: transparent;
             // text-shadow: 1px 1px 2px skyblue;
             animation: bg 10s linear infinite alternate;
         }
+
         @keyframes bg {
             50% {
                 background-position: right;
             }
         }
+
         p {
             font-family: 'Titillium Web', sans-serif;
 
@@ -108,7 +114,7 @@ body {
 }
 
 
-.parallax::before{
+.parallax::before {
     content: '';
     position: absolute;
     left: 0;
@@ -129,10 +135,9 @@ body {
     background-attachment: fixed;
     position: relative;
 
-    
 
 
-    &::after{
+    &::after {
         content: '';
         position: absolute;
         top: 0;
@@ -141,142 +146,149 @@ body {
         height: 100%;
         background-image: url('../img/jackson-hendry-eodA_8CTOFo-unsplash.jpg');
         background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    opacity: .3;
-    overflow-x: hidden;
-    animation: scale 15s ease-in-out alternate infinite;
-    // animation-fill-mode: forwards;
+        background-position: bottom;
+        background-attachment: fixed;
+        opacity: .3;
+        // overflow-x: hidden;
+        // animation: scale 15s ease-in-out alternate infinite;
+        // animation-fill-mode: forwards;
 
-    @keyframes scale {
-        100% {
-            transform: scaleX(1.6);
-        }
-    }
-  }
-
-
-    
-
-}
-.parallax-1-1 {
-    background: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg') no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
+        //     @keyframes scale {
+        //         100% {
+        //             transform: scaleX(1.6);
+        //         }
+        //     }
+          }
 
 
-    h2{
-        margin-bottom: 2em;
+
+
     }
 
-}
-
-.parallax-2 {
-    background: url('../img/jackson-hendry-eodA_8CTOFo-unsplash.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-
-    &::after {
-    content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg');
+    .parallax-1-1 {
+        background: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg') no-repeat;
         background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    opacity: .2;
-}
+        background-position: bottom;
+        background-attachment: fixed;
 
-    article {
+
         h2 {
-            margin-bottom: 1em;
+            margin-bottom: 2em;
         }
-        p{
-            font-size: 1em;
-        }
+
     }
 
-}
+    .parallax-2 {
+        background: url('../img/jackson-hendry-eodA_8CTOFo-unsplash.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
 
-.parallax-3 {
-    background: url('../img/qusv-yang-EFsactqua1g-unsplash.jpg') no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    background-attachment: fixed;
-
-    article {
-        transform: scale(0.8);
-        transition: all .2s ease-in-out;
-        background-image: linear-gradient(45deg, rgb(77, 74, 74),rgb(241, 242, 245));
-        background-position: left;
-        background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; 
-        height: 7em;
-        width: 7em;
-        border-radius: 100%;
-
-        &::before {
+        &::after {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            border: 1px solid #ddd;
-            border-radius: 100%;
-            animation: pulse 2s infinite linear;
-            opacity: 0;
+            background-image: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg');
+            background-size: cover;
+            background-position: bottom;
+            background-attachment: fixed;
+            opacity: .2;
+        }
+
+        article {
+            h2 {
+                margin-bottom: 1em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+    }
+
+    .parallax-3 {
+        background: url('../img/qusv-yang-EFsactqua1g-unsplash.jpg') no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        background-attachment: fixed;
+
+        article {
             transform: scale(0.8);
-        }
-        @keyframes pulse {
-            10%{
-                opacity: 1;
-            }
-            
-            100% {
-                transform: scale(1.12);
-                opacity: 0;
-            }
-        }
-        i {
-            font-size: 6em;
-        }
-        &:hover{
-            transition: all .3s ease-in-out;
-            transform: scale(1);
-            box-shadow: 2px 3px 2px #ddd;
+            transition: all .2s ease-in-out;
+            background-image: linear-gradient(45deg, rgb(77, 74, 74), rgb(241, 242, 245));
+            background-position: left;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            height: 7em;
+            width: 7em;
+            border-radius: 100%;
 
-            border: none;
             &::before {
-                display: none;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 1px solid #ddd;
+                border-radius: 100%;
+                animation: pulse 2s infinite linear;
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            @keyframes pulse {
+                10% {
+                    opacity: 1;
+                }
+
+                100% {
+                    transform: scale(1.12);
+                    opacity: 0;
+                }
+            }
+
+            i {
+                font-size: 6em;
+            }
+
+            &:hover {
+                transition: all .3s ease-in-out;
+                transform: scale(1);
+                box-shadow: 2px 3px 2px #ddd;
+
+                border: none;
+
+                &::before {
+                    display: none;
+                }
             }
         }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
     }
 
-    a{
-        color: #fff;
-        text-decoration: none;
-    }
-    
-}
-.parallax-4 {
-    background: url('../img/qusv-yang-EFsactqua1g-unsplash.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-    
-    
+    .parallax-4 {
+        background: url('../img/qusv-yang-EFsactqua1g-unsplash.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
 
-    &::after {
-        content: '';
+
+
+        &::after {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
@@ -288,31 +300,32 @@ body {
             background-position: 10%;
             background-attachment: fixed;
             opacity: .3;
-            animation: para4 30s infinite linear ;
-        @keyframes para4 {
-            50% {
-            background-position: 50%;
+            animation: para4 30s infinite linear;
+
+            @keyframes para4 {
+                50% {
+                    background-position: 50%;
+                }
             }
         }
+
+
+
+        p {
+            text-shadow: 0 0 2px lightgreen;
+        }
+
     }
 
-    
+    footer {
+        width: 100vw;
+        text-align: center;
+        font-size: 1.2em;
+        color: #fff;
+        background: #000;
+        text-shadow: 1px 1px 2px lightgreen;
+        font-family: 'Titillium Web', sans-serif;
 
-    p {
-        text-shadow: 0 0 2px lightgreen;
     }
-    
-}
 
-footer {
-    width: 100vw;
-    text-align: center;
-    font-size: 1.2em;
-    color: #fff;
-    background: #000;
-    text-shadow: 1px 1px 2px lightgreen;
-    font-family: 'Titillium Web', sans-serif;
-
-}
-
-@import 'mobile';
+    @import 'mobile';
