@@ -137,7 +137,7 @@ body {
     background-position: bottom;
     background-attachment: fixed;
     opacity: .3;
-    overflow: hidden;
+    overflow-x: hidden;
     animation: scale 15s ease-in-out alternate infinite;
     // animation-fill-mode: forwards;
 
