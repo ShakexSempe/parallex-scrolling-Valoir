@@ -106,10 +106,17 @@ body {
     width: 100%;
     height: 100%;
     background-image: url("../img/jackson-hendry-eodA_8CTOFo-unsplash.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
-    opacity: .3; }
+    opacity: .3;
+    overflow-x: hidden;
+    animation: scale 40s linear infinite alternate; }
+
+@keyframes scale {
+  100% {
+    background-position: 90%; } }
 
 .parallax-1-1 {
   background: url("../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg") no-repeat;
