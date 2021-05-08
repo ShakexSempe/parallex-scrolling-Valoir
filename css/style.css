@@ -62,7 +62,8 @@ body {
     border-radius: 10px;
     z-index: 1;
     position: sticky;
-    top: 10%; }
+    top: 10%;
+    overflow: visible; }
     .parallax article h2 {
       font-family: 'Play', sans-serif;
       font-size: 3em;
