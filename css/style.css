@@ -137,11 +137,11 @@ body {
   background-position: bottom;
   background-attachment: fixed; }
   .parallax-1-1 h2 {
-    margin-bottom: 2em; }
+    margin-bottom: 1.5em; }
   .parallax-1-1 p {
     font-size: 1.4em;
     animation: text 20s linear infinite;
-    background: linear-gradient(50deg, #fff, #b0fff3, #fff);
+    background: linear-gradient(90deg, white, #98fc98, #7df9fd, white);
     font-weight: 500;
     background-size: 250%;
     background-position: left;
