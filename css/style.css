@@ -121,8 +121,9 @@ body {
     background-position: 90%; } }
   .parallax-1 article {
     transform: scale(0.8);
-    animation: headZoom 4s ease;
+    animation: headZoom 10s ease;
     cursor: pointer;
+    animation-delay: 2s;
     animation-fill-mode: forwards; }
 
 @keyframes headZoom {
@@ -141,7 +142,7 @@ body {
   .parallax-1-1 p {
     font-size: 1.4em;
     animation: text 20s linear infinite;
-    background: linear-gradient(90deg, white, #99fc98, #7df9fd, white);
+    background: linear-gradient(30deg, white, #baf5f7, white);
     font-weight: 500;
     background-size: 250%;
     background-position: left;
