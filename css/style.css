@@ -79,7 +79,18 @@ body {
   50% {
     background-position: right; } }
     .parallax article p {
-      font-family: 'Titillium Web', sans-serif; }
+      font-family: 'Titillium Web', sans-serif;
+      animation: text 10s linear infinite;
+      background-image: linear-gradient(50deg, #9fe0d6, rgba(216, 250, 154, 0.76), #f3c2f5);
+      background-size: 250%;
+      background-position: left;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+@keyframes text {
+  50% {
+    background-position: right; } }
 
 .parallax::before {
   content: '';

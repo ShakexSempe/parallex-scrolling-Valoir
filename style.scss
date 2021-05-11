@@ -108,7 +108,20 @@ body {
 
         p {
             font-family: 'Titillium Web', sans-serif;
+            animation: text 10s linear infinite;
+            background-image: linear-gradient(50deg, rgb(159, 224, 214), rgba(216, 250, 154, 0.76), rgb(243, 194, 245));
+            background-size: 250%;
+            background-position: left;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
 
+            @keyframes text {
+                50% {
+                    background-position: right;
+                }
+                
+            }
         }
     }
 }
