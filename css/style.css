@@ -141,7 +141,7 @@ body {
   .parallax-1-1 p {
     font-size: 1.4em;
     animation: text 20s linear infinite;
-    background: linear-gradient(90deg, white, #98fc98, #7df9fd, white);
+    background: linear-gradient(90deg, white, #99fc98, #7df9fd, white);
     font-weight: 500;
     background-size: 250%;
     background-position: left;
