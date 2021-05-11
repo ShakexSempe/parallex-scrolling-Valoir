@@ -67,7 +67,7 @@ body {
     .parallax article h2 {
       font-family: 'Play', sans-serif;
       font-size: 3em;
-      background-image: linear-gradient(90deg, #baee86, #8fa8ee, pink, skyblue, #66f066);
+      background-image: linear-gradient(30deg, #baee86, #8fa8ee, pink, skyblue, #66f066);
       background-size: 350%;
       background-position: left;
       background-clip: text;
@@ -79,18 +79,7 @@ body {
   50% {
     background-position: right; } }
     .parallax article p {
-      font-family: 'Titillium Web', sans-serif;
-      animation: text 10s linear infinite;
-      background-image: linear-gradient(50deg, #9fe0d6, rgba(216, 250, 154, 0.76), #f3c2f5);
-      background-size: 250%;
-      background-position: left;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-
-@keyframes text {
-  50% {
-    background-position: right; } }
+      font-family: 'Titillium Web', sans-serif; }
 
 .parallax::before {
   content: '';
@@ -128,6 +117,8 @@ body {
 @keyframes scale {
   100% {
     background-position: 90%; } }
+  .parallax-1 article p {
+    color: #fff; }
 
 .parallax-1-1 {
   background: url("../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg") no-repeat;
@@ -136,6 +127,19 @@ body {
   background-attachment: fixed; }
   .parallax-1-1 h2 {
     margin-bottom: 2em; }
+  .parallax-1-1 p {
+    animation: text 10s linear infinite;
+    background: linear-gradient(50deg, #fff, #b0fff3, #fff, rgba(226, 253, 175, 0.76), #fff, #f3c2f5, #fff);
+    font-weight: 500;
+    background-size: 250%;
+    background-position: left;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+@keyframes text {
+  50% {
+    background-position: right; } }
 
 .parallax-2 {
   background: url("../img/jackson-hendry-eodA_8CTOFo-unsplash.jpg") no-repeat;
