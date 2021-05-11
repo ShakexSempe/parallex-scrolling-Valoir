@@ -34,6 +34,8 @@ body {
     text-decoration: underline; }
   .section-div ul {
     font-family: 'Titillium Web', sans-serif; }
+    .section-div ul li {
+      list-style: none; }
   .section-div article {
     display: flex;
     flex-direction: row;
@@ -54,7 +56,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: rgba(24, 23, 23, 0.616);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.129));
     color: #ddd;
     width: 50%;
     height: auto;
@@ -66,7 +68,7 @@ body {
     overflow: visible; }
     .parallax article h2 {
       font-family: 'Play', sans-serif;
-      font-size: 3em;
+      font-size: 3.6em;
       background-image: linear-gradient(30deg, #baee86, #8fa8ee, pink, skyblue, #66f066);
       background-size: 350%;
       background-position: left;
@@ -117,8 +119,17 @@ body {
 @keyframes scale {
   100% {
     background-position: 90%; } }
-  .parallax-1 article p {
-    color: #fff; }
+  .parallax-1 article {
+    transform: scale(0.8);
+    animation: headZoom 4s ease;
+    cursor: pointer;
+    animation-fill-mode: forwards; }
+
+@keyframes headZoom {
+  100% {
+    transform: scale(1); } }
+    .parallax-1 article p {
+      color: #ddd; }
 
 .parallax-1-1 {
   background: url("../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg") no-repeat;
@@ -128,7 +139,8 @@ body {
   .parallax-1-1 h2 {
     margin-bottom: 2em; }
   .parallax-1-1 p {
-    animation: text 10s linear infinite;
+    font-size: 1.4em;
+    animation: text 20s linear infinite;
     background: linear-gradient(50deg, #fff, #b0fff3, #fff, rgba(226, 253, 175, 0.76), #fff, #f3c2f5, #fff);
     font-weight: 500;
     background-size: 250%;
@@ -162,7 +174,7 @@ body {
   .parallax-2 article h2 {
     margin-bottom: 1em; }
   .parallax-2 article p {
-    font-size: 1em; }
+    font-size: 1.4em; }
 
 .parallax-3 {
   background: url("../img/qusv-yang-EFsactqua1g-unsplash.jpg") no-repeat;
@@ -237,25 +249,26 @@ body {
   50% {
     background-position: 50%; } }
   .parallax-4 p {
-    text-shadow: 0 0 2px lightgreen; }
+    text-shadow: 0 0 2px lightgreen;
+    font-size: 1.5em; }
 
 footer {
   width: 100vw;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: #fff;
   background: #000;
   text-shadow: 1px 1px 2px lightgreen;
   font-family: 'Titillium Web', sans-serif; }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .parallax article {
     height: auto;
     width: 80%; }
     .parallax article h2 {
       font-size: 1.7em; }
     .parallax article p {
-      font-size: 0.7em; }
+      font-size: 0.8em; }
   .section-div {
     height: auto;
     font-size: 1.3em;
@@ -269,6 +282,8 @@ footer {
     .section-div p {
       font-size: 0.6em;
       line-height: 2; }
+  .parallax-1-1 article h2 {
+    font-size: 2.2em; }
   .parallax-2 article {
     height: auto;
     display: flex; }
@@ -280,7 +295,7 @@ footer {
     .parallax-3 article i {
       font-size: 4em; }
   .parallax-4 article p {
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.6;
     padding: 5px; }
   .parallax-4::after {

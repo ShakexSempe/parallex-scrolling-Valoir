@@ -1,4 +1,4 @@
-@media(max-width:500px) {
+@media(max-width:768px) {
 
     .parallax {
         article {
@@ -10,7 +10,7 @@
             }
 
             p {
-                font-size: 0.7em;
+                font-size: 0.8em;
             }
 
         }
@@ -28,6 +28,7 @@
             
             .skills-end{
                 margin: 1em;
+
             }
         }
 
@@ -36,6 +37,16 @@
             line-height: 2;
         }
     }
+
+    .parallax-1-1 {
+        article{
+    
+            h2{
+                font-size: 2.2em;
+            }
+            
+        }
+        };
 
     .parallax-2 {
     article{
@@ -65,7 +76,7 @@
     .parallax-4 {
         article {
             p {
-                font-size: 1em;
+                font-size: 1.3em;
                 line-height: 1.6;
                 padding: 5px;
             }

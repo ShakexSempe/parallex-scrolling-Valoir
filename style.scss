@@ -45,6 +45,9 @@ body {
 
     ul {
         font-family: 'Titillium Web', sans-serif;
+         li {
+             list-style: none;
+         }
     }
 
     article {
@@ -75,8 +78,8 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.129),rgba(0, 0, 0, 0.129));
-        background: rgba(24, 23, 23, 0.616);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.129));
+        // background: rgba(24, 23, 23, 0.616);
         color: #ddd;
         width: 50%;
         height: auto;
@@ -89,7 +92,7 @@ body {
 
         h2 {
             font-family: 'Play', sans-serif;
-            font-size: 3em;
+            font-size: 3.6em;
             background-image: linear-gradient(30deg, rgb(186, 238, 134), rgb(143, 168, 238), pink, skyblue, rgb(102, 240, 102));
             background-size: 350%;
             background-position: left;
@@ -151,9 +154,8 @@ body {
         background-attachment: fixed;
         opacity: .3;
         overflow-x: hidden;
-        // transform: scale(0.7);
         animation: scale 40s linear infinite alternate;
-        // animation-fill-mode: forwards;
+      
 
         @keyframes scale {
             100% {
@@ -164,8 +166,21 @@ body {
     }
 
     article {
+        transform: scale(0.8);
+        animation: headZoom 4s ease;
+        cursor: pointer;
+        animation-fill-mode: forwards;
+        
+            @keyframes headZoom {
+                100% {
+                    transform: scale(1);
+            }
+        
+    }
+
+
         p {
-            color: #fff;
+            color: #ddd;
         }
     }
 
@@ -180,10 +195,12 @@ body {
 
         h2 {
             margin-bottom: 2em;
+
         }
 
         p {
-            animation: text 10s linear infinite;
+            font-size: 1.4em;
+            animation: text 20s linear infinite;
             background: linear-gradient(50deg, #fff, rgb(176, 255, 243), #fff, rgba(226, 253, 175, 0.76), #fff,  rgb(243, 194, 245), #fff);
             font-weight: 500;
             background-size: 250%;
@@ -229,7 +246,7 @@ body {
             }
 
             p {
-                font-size: 1em;
+                font-size: 1.4em;
                 
             }
         }
@@ -338,6 +355,7 @@ body {
 
         p {
             text-shadow: 0 0 2px lightgreen;
+            font-size: 1.5em;
         }
 
     }
@@ -345,7 +363,7 @@ body {
     footer {
         width: 100vw;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1.3em;
         color: #fff;
         background: #000;
         text-shadow: 1px 1px 2px lightgreen;
@@ -353,4 +371,4 @@ body {
 
     }
 
-    @import 'mobile';
+    @import "mobile";
