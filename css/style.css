@@ -141,7 +141,7 @@ body {
   .parallax-1-1 p {
     font-size: 1.4em;
     animation: text 20s linear infinite;
-    background: linear-gradient(50deg, #fff, #b0fff3, #fff, rgba(226, 253, 175, 0.76), #fff, #f3c2f5, #fff);
+    background: linear-gradient(50deg, #fff, #b0fff3, #fff);
     font-weight: 500;
     background-size: 250%;
     background-position: left;
@@ -295,7 +295,7 @@ footer {
     .parallax-3 article i {
       font-size: 4em; }
   .parallax-4 article p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.6;
     padding: 5px; }
   .parallax-4::after {
