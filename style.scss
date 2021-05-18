@@ -45,9 +45,10 @@ body {
 
     ul {
         font-family: 'Titillium Web', sans-serif;
-         li {
-             list-style: none;
-         }
+
+        li {
+            list-style: none;
+        }
     }
 
     article {
@@ -78,7 +79,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.129));
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.129));
         // background: rgba(24, 23, 23, 0.616);
         color: #ddd;
         width: 50%;
@@ -111,7 +112,7 @@ body {
 
         p {
             font-family: 'Titillium Web', sans-serif;
-            
+
         }
     }
 }
@@ -127,7 +128,131 @@ body {
     background: #000;
     opacity: 0.5;
     overflow-x: hidden;
-    
+
+}
+
+.cube-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/img/shakexblue.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    perspective: 10em;
+    perspective-origin: 50% calc(50% - 3em);
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.689);
+        width: 100%;
+        height: 100%;
+    }
+
+    .scene {
+        position: relative;
+        transform-style: preserve-3d;
+        animation: sceneRotate 10s infinite linear;
+
+        @keyframes sceneRotate {
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+
+    }
+
+    // cube
+    .cube {
+        width: 2em;
+        height: 2em;
+        transform: preserve-3d;
+        position: absolute;
+        bottom: -1em;
+        left: -1em;
+
+        .front,
+        .back,
+        .left,
+        .right {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(18, 18, 247, 0.322);
+            box-shadow: 0 0 0.5em #000a inset;
+            pointer-events: none;
+        }
+
+        .front {
+            transform: translateZ(1em);
+        }
+
+        .right {
+            transform: rotateY(90deg) translateZ(1em);
+        }
+
+        .back {
+            transform: rotateY(180deg) translateZ(1em);
+        }
+
+        .left {
+            transform: rotateY(270deg) translateZ(1em);
+        }
+
+        .top {
+            position: absolute;
+            width: 2em;
+            height: 2em;
+            background: rgba(4, 4, 252, 0.322);
+
+            transform: translateY(-50%) rotateX(90deg);
+            box-shadow: 0 0 0.5em #000a inset;
+        }
+
+        .bottom {
+            position: absolute;
+            width: 2em;
+            height: 2em;
+            bottom: 0;
+            background: #fff000;
+
+            transform: translateY(50%) rotateX(90deg);
+            box-shadow: 0 0 0.5em #000;
+        }
+
+    }
+
+    i {
+        position: absolute;
+        left: .5em;
+        bottom: .5em;
+        animation: iconRotate 5s linear infinite reverse;
+        color: skyblue;
+        transform: preserve-3d;
+
+        @keyframes iconRotate {
+            100% {
+                transform: rotateY(360deg);
+                // bottom: 3em;
+            }
+        }
+
+        &:hover {
+            z-index: 200;
+        }
+
+
+    }
+
+    // end cube
 }
 
 
@@ -155,7 +280,7 @@ body {
         opacity: .3;
         overflow-x: hidden;
         animation: scale 40s linear infinite alternate;
-      
+
 
         @keyframes scale {
             100% {
@@ -171,13 +296,13 @@ body {
         cursor: pointer;
         animation-delay: 2s;
         animation-fill-mode: forwards;
-        
-            @keyframes headZoom {
-                100% {
-                    transform: scale(1);
+
+        @keyframes headZoom {
+            100% {
+                transform: scale(1);
             }
-        
-    }
+
+        }
 
 
         p {
@@ -187,189 +312,189 @@ body {
 
 }
 
-    .parallax-1-1 {
-        background: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg') no-repeat;
+.parallax-1-1 {
+    background: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+
+
+    h2 {
+        margin-bottom: 1.5em;
+
+    }
+
+    p {
+        font-size: 1.4em;
+        animation: text 20s linear infinite;
+        background: linear-gradient(30deg, rgb(255, 255, 255), rgb(186, 245, 247), rgb(255, 255, 255));
+        font-weight: 500;
+        background-size: 250%;
+        background-position: left;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @keyframes text {
+            50% {
+                background-position: right;
+            }
+
+        }
+    }
+
+}
+
+.parallax-2 {
+    background: url('../img/jackson-hendry-eodA_8CTOFo-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg');
         background-size: cover;
         background-position: bottom;
         background-attachment: fixed;
+        opacity: .2;
+    }
 
-
+    article {
         h2 {
-            margin-bottom: 1.5em;
-
+            margin-bottom: 1em;
         }
 
         p {
             font-size: 1.4em;
-            animation: text 20s linear infinite;
-            background: linear-gradient(30deg, rgb(255, 255, 255), rgb(186, 245, 247), rgb(255,255,255));
-             font-weight: 500;
-            background-size: 250%;
-            background-position: left;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
 
-            @keyframes text {
-                50% {
-                    background-position: right;
-                }
-                
-            }
         }
-
     }
 
-    .parallax-2 {
-        background: url('../img/jackson-hendry-eodA_8CTOFo-unsplash.jpg') no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        position: relative;
+}
 
-        &::after {
+.parallax-3 {
+    background: url('../img/qusv-yang-EFsactqua1g-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+
+    article {
+        transform: scale(0.8);
+        transition: all .2s ease-in-out;
+        background-image: linear-gradient(45deg, rgb(77, 74, 74), rgb(241, 242, 245));
+        background-position: left;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        height: 7em;
+        width: 7em;
+        border-radius: 100%;
+
+        &::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg');
-            background-size: cover;
-            background-position: bottom;
-            background-attachment: fixed;
-            opacity: .2;
-        }
-
-        article {
-            h2 {
-                margin-bottom: 1em;
-            }
-
-            p {
-                font-size: 1.4em;
-                
-            }
-        }
-
-    }
-
-    .parallax-3 {
-        background: url('../img/qusv-yang-EFsactqua1g-unsplash.jpg') no-repeat;
-        background-size: cover;
-        background-position: 50%;
-        background-attachment: fixed;
-
-        article {
-            transform: scale(0.8);
-            transition: all .2s ease-in-out;
-            background-image: linear-gradient(45deg, rgb(77, 74, 74), rgb(241, 242, 245));
-            background-position: left;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            height: 7em;
-            width: 7em;
+            border: 1px solid #ddd;
             border-radius: 100%;
+            animation: pulse 2s infinite linear;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+
+        @keyframes pulse {
+            10% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1.12);
+                opacity: 0;
+            }
+        }
+
+        i {
+            font-size: 6em;
+        }
+
+        &:hover {
+            transition: all .3s ease-in-out;
+            transform: scale(1);
+            box-shadow: 2px 3px 2px #ddd;
+
+            border: none;
 
             &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border: 1px solid #ddd;
-                border-radius: 100%;
-                animation: pulse 2s infinite linear;
-                opacity: 0;
-                transform: scale(0.8);
-            }
-
-            @keyframes pulse {
-                10% {
-                    opacity: 1;
-                }
-
-                100% {
-                    transform: scale(1.12);
-                    opacity: 0;
-                }
-            }
-
-            i {
-                font-size: 6em;
-            }
-
-            &:hover {
-                transition: all .3s ease-in-out;
-                transform: scale(1);
-                box-shadow: 2px 3px 2px #ddd;
-
-                border: none;
-
-                &::before {
-                    display: none;
-                }
+                display: none;
             }
         }
-
-        a {
-            color: #fff;
-            text-decoration: none;
-        }
-
     }
 
-    .parallax-4 {
-        background: url('../img/qusv-yang-EFsactqua1g-unsplash.jpg') no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        position: relative;
-
-
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg');
-            background-size: 120%;
-            background-repeat: no-repeat;
-            background-position: 10%;
-            background-attachment: fixed;
-            opacity: .3;
-            animation: para4 30s infinite linear;
-
-            @keyframes para4 {
-                50% {
-                    background-position: 50%;
-                }
-            }
-        }
-
-
-
-        p {
-            text-shadow: 0 0 2px lightgreen;
-            font-size: 1.5em;
-        }
-
-    }
-
-    footer {
-        width: 100vw;
-        text-align: center;
-        font-size: 1.3em;
+    a {
         color: #fff;
-        background: #000;
-        text-shadow: 1px 1px 2px lightgreen;
-        font-family: 'Titillium Web', sans-serif;
-
+        text-decoration: none;
     }
 
-    @import "mobile";
+}
+
+.parallax-4 {
+    background: url('../img/qusv-yang-EFsactqua1g-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+
+
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg');
+        background-size: 120%;
+        background-repeat: no-repeat;
+        background-position: 10%;
+        background-attachment: fixed;
+        opacity: .3;
+        animation: para4 30s infinite linear;
+
+        @keyframes para4 {
+            50% {
+                background-position: 50%;
+            }
+        }
+    }
+
+
+
+    p {
+        text-shadow: 0 0 2px lightgreen;
+        font-size: 1.5em;
+    }
+
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
+    font-size: 1.3em;
+    color: #fff;
+    background: #000;
+    text-shadow: 1px 1px 2px lightgreen;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+@import "mobile";
