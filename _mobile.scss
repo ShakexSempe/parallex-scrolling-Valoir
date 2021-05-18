@@ -1,4 +1,12 @@
 @media(max-width:768px) {
+    .cube-container {
+        background-size: cover;
+        background-position: center;
+        
+        a {
+            font-size: 3rem;
+        }
+    }
 
     .parallax {
         article {
