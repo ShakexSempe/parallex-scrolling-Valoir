@@ -149,21 +149,38 @@ body {
     perspective: 20em;
     perspective-origin: 50% calc(50% - 8em);
 
-    a {
+    button {
         position: absolute;
         left: 5%;
         bottom: 10%;
-        background-image: linear-gradient(90deg, rgb(85, 196, 240), transparent,skyblue);
-        background-size: 400%;
-        background-position: left;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: #fff;
-        text-decoration: none;
-        font-size: 5rem;
-        animation: linkAinimation 5s linear infinite alternate;
+        
+        font-size: 3.5rem;
+        border: none;
+        box-shadow: 3px 3px 5px 5px rgba(104, 102, 102, 0.712), -5px -5px 5px 5px rgba(160, 159, 159, 0.589);
+        border-radius: 10px;
+        padding: 10px;
+        background: #0505a89d;
+        transition: all 1s ;
+        
+        a {
+            background-image: linear-gradient(90deg, rgb(158, 158, 14), transparent, skyblue);
+            background-size: 400%;
+            background-position: left;
 
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            animation: linkAinimation 5s linear infinite alternate;
+
+        
+        }
+        &:hover {
+            transition: all 1s ease;
+            animation: none;
+            background-clip: text;
+        -webkit-background-clip: text;
+        }
         @keyframes linkAinimation {
             100% {
                 background-position: right;
@@ -171,8 +188,7 @@ body {
         }
 
         &:hover {
-            transition: .3s ease;
-            animation: none;
+            box-shadow: inset 3px 3px 5px 5px rgba(255, 255, 255, 0.37), inset -3px -3px 5px 3px rgba(255, 255, 255, 0.596);
         }
     }
 
