@@ -112,14 +112,15 @@ body {
   perspective-origin: 50% calc(50% - 8em); }
   .cube-container button {
     position: absolute;
-    left: 5%;
-    bottom: 10%;
+    left: 0;
+    top: 0;
+    text-align: center;
     font-size: 3.5rem;
     border: none;
     box-shadow: 3px 3px 5px 5px rgba(104, 102, 102, 0.712), -5px -5px 5px 5px rgba(160, 159, 159, 0.589);
     border-radius: 10px;
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 5px;
     background: #0505a89d;
     transition: all 1s; }
     .cube-container button a {
@@ -385,7 +386,7 @@ footer {
     background-size: cover;
     background-position: center; }
     .cube-container a {
-      font-size: 3rem; }
+      font-size: 2rem; }
   .parallax article {
     height: auto;
     width: 80%; }
