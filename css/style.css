@@ -126,20 +126,38 @@ body {
       border-bottom-right-radius: 50%;
       border-bottom-left-radius: 50%; }
     .nivea-container .nivea .lid {
-      position: absolute;
+      position: relative;
       top: .4em;
       left: 50%;
       transform: translate(-50%);
-      background: #6b6767;
+      background: #a5a4a4;
       width: 85%;
       height: 2em;
-      z-index: 2; }
+      z-index: 2;
+      box-shadow: inset 20px 0px 30px rgba(51, 51, 51, 0.897), inset -20px 0 30px rgba(126, 123, 123, 0.39); }
+      .nivea-container .nivea .lid::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: .5em;
+        width: 1px;
+        height: 100%;
+        background-color: #868585;
+        box-shadow: 10px 0 10px #000, -3px 0 5px #fff; }
+      .nivea-container .nivea .lid::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: .5em;
+        width: 1px;
+        height: 100%;
+        background-color: rgba(85, 84, 84, 0.452); }
     .nivea-container .nivea .body-top {
       position: absolute;
       top: 1.8em;
       left: 50%;
       transform: translate(-50%);
-      background: #292929;
+      background: #242424;
       width: 95%;
       height: 2em;
       border-top-right-radius: 50%;
@@ -155,7 +173,18 @@ body {
       height: 45%;
       z-index: 2;
       border-bottom-right-radius: 15px;
-      border-bottom-left-radius: 15px; }
+      border-bottom-left-radius: 15px;
+      border-bottom: 1px solid rgba(7, 7, 7, 0.178); }
+      .nivea-container .nivea .body-middle::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: .3em;
+        background-image: linear-gradient(0deg, transparent, white);
+        height: 100%;
+        opacity: .1;
+        width: .5em;
+        border-radius: 10%; }
       .nivea-container .nivea .body-middle .content {
         position: absolute;
         top: 50%;
@@ -170,7 +199,8 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        outline: 1px solid rgba(221, 221, 221, 0.089); }
         .nivea-container .nivea .body-middle .content p {
           font-size: 1.5em;
           text-transform: uppercase; }

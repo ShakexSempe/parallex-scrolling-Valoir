@@ -165,14 +165,36 @@ body {
             border-bottom-left-radius: 50%;
         }
         .lid {
-            position: absolute;
+            position: relative;
             top: .4em;
             left: 50%;
             transform: translate(-50%);
-        background: rgb(107, 103, 103);
-        width: 85%;
-        height: 2em;
-        z-index: 2;
+            background: rgb(165, 164, 164);
+            width: 85%;
+            height: 2em;
+            z-index: 2;
+            box-shadow: inset 20px 0px 30px rgba(51, 51, 51, 0.897)
+            ,inset -20px 0 30px rgba(126, 123, 123, 0.39);
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                right: .5em;
+                width: 1px;
+                height: 100%;
+                background-color: rgb(134, 133, 133);
+                box-shadow: 10px 0 10px #000, -3px 0 5px #fff;
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: .5em;
+                width: 1px;
+                height: 100%;
+                background-color: rgba(85,84,84, .452);
+            }
     }
 
     .body-top {
@@ -180,7 +202,7 @@ body {
         top: 1.8em;
         left: 50%;
             transform: translate(-50%);
-        background: #292929;
+        background: #242424;
         width: 95%;
         height: 2em;
         border-top-right-radius: 50%;
@@ -200,6 +222,19 @@ body {
         z-index: 2;
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
+        border-bottom: 1px solid rgba(7, 7, 7, 0.178);
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: .3em;
+            background-image: linear-gradient(0deg, transparent, rgb(255, 255, 255));
+            height: 100%;
+            opacity: .1;
+            width: .5em;
+            border-radius: 10%;
+        }
 
         .content {
             position: absolute;
@@ -216,6 +251,8 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            outline: 1px solid rgba(221, 221, 221, 0.089);
+            // outline-offset: .3em;
 
             p {
                 font-size: 1.5em;
