@@ -141,12 +141,16 @@ body {
     display: grid;
     place-items: center;
     font-size: 30px;
+    text-transform: capitalize;
     
     .nivea {
         height: 90%;
-        width: 90%;
+        width: 80%;
         position: relative;
-        @media (min-width: 800px){
+        @media (min-width: 768px){
+            width: 40%;
+        }
+        @media (min-width: 1024px){
             width: 20%;
         }
         .top {
@@ -194,6 +198,8 @@ body {
         width: 95%;
         height: 45%;
         z-index: 2;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
 
         .content {
             position: absolute;
@@ -213,6 +219,7 @@ body {
 
             p {
                 font-size: 1.5em;
+                text-transform: uppercase;
                 span {
                     color: #6c6e43 ;
                 }
@@ -226,11 +233,52 @@ body {
             transform: translate(-50%);
         background: #161616;
         width: 93%;
-        height: 45%;
+        height: 50%;
         z-index: 1;
         border-bottom-left-radius: 5%;
         border-bottom-right-radius: 5%;
         border-bottom: 1px solid rgb(182, 181, 181);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer {
+            background: #333;
+            width: 90%;
+            height: 30%;
+            position: absolute;
+            font-size: .8em;
+            color: #fff;
+            z-index: 2;
+            bottom: .1em;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .head {
+                background: #161616;
+                text-align: center;
+                border-bottom-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+                width: 80%;
+                margin: 0 auto;
+
+            }
+            .body {
+                text-align: center; 
+            }
+            .foot {
+                background: #000;
+                text-align: center;
+                width: 80%;
+                margin: .3em auto;
+                font-size: .7em;
+                bottom: 0;
+            }
+        }
     }
 }
 }
