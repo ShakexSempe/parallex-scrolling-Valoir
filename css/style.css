@@ -460,7 +460,7 @@ footer {
   font-size: 30px;
   text-transform: capitalize; }
   .nivea-container .nivea {
-    height: 90%;
+    height: 95%;
     width: 80%;
     position: relative; }
     @media (min-width: 768px) {
@@ -572,7 +572,7 @@ footer {
             color: #81835c; }
     .nivea-container .nivea .body-bottom {
       position: absolute;
-      top: 58%;
+      top: 57%;
       left: 50%;
       transform: translate(-50%);
       background: #161616;
@@ -591,8 +591,8 @@ footer {
         width: 100%;
         top: 0; }
         .nivea-container .nivea .body-bottom .logo-container .logo {
-          width: 2.5em;
-          height: 2.5em;
+          width: 2em;
+          height: 2em;
           border-radius: 50%;
           background-image: radial-gradient(navy, #000);
           position: absolute;
@@ -614,13 +614,13 @@ footer {
           box-shadow: -10px 10px 30px rgba(135, 207, 235, 0.63); }
       .nivea-container .nivea .body-bottom .footer {
         background: #333;
-        width: 90%;
-        height: 30%;
+        width: 95%;
+        height: 35%;
         position: absolute;
         font-size: .8em;
         color: #fff;
         z-index: 2;
-        bottom: .1em;
+        bottom: 0;
         left: 50%;
         transform: translate(-50%, -50%);
         display: flex;
@@ -634,7 +634,9 @@ footer {
           border-bottom-left-radius: 50px;
           width: 80%;
           margin: 0 auto;
-          font-size: .9em; }
+          padding: 3px 0;
+          font-size: .8em;
+          color: #81835c; }
         .nivea-container .nivea .body-bottom .footer .body {
           text-align: center;
           font-size: .8em; }

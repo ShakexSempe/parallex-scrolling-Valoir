@@ -10,7 +10,7 @@
     text-transform: capitalize;
     
     .nivea {
-        height: 90%;
+        height: 95%;
         width: 80%;
         position: relative;
         @media (min-width: 768px){
@@ -146,7 +146,7 @@
     }
     .body-bottom {
         position: absolute;
-        top: 58%;
+        top: 57%;
         left: 50%;
             transform: translate(-50%);
         background: #161616;
@@ -167,8 +167,8 @@
             top: 0;
 
             .logo {
-                width: 2.5em;
-                height: 2.5em;
+                width: 2em;
+                height: 2em;
                 border-radius: 50%;
                 background-image: radial-gradient(navy, #000, );
                 position: absolute;
@@ -204,13 +204,13 @@
 
         .footer {
             background: #333;
-            width: 90%;
-            height: 30%;
+            width: 95%;
+            height: 35%;
             position: absolute;
             font-size: .8em;
             color: #fff;
             z-index: 2;
-            bottom: .1em;
+            bottom: 0;
             left: 50%;
             transform: translate(-50%, -50%);
             display: flex;
@@ -225,7 +225,9 @@
                 border-bottom-left-radius: 50px;
                 width: 80%;
                 margin: 0 auto;
-                font-size: .9em;
+                padding: 3px 0;
+                font-size: .8em;
+                color: #81835c;
                 
 
             }
