@@ -572,7 +572,7 @@ footer {
             color: #81835c; }
     .nivea-container .nivea .body-bottom {
       position: absolute;
-      top: 57%;
+      top: 63%;
       left: 50%;
       transform: translate(-50%);
       background: #161616;
@@ -585,6 +585,12 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      @media (min-height: 600px) {
+        .nivea-container .nivea .body-bottom {
+          top: 60%; } }
+      @media (min-height: 700px) {
+        .nivea-container .nivea .body-bottom {
+          top: 57%; } }
       .nivea-container .nivea .body-bottom .logo-container {
         position: absolute;
         height: 50%;
