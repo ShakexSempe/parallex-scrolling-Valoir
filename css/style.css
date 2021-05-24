@@ -95,124 +95,6 @@ body {
   opacity: 0.5;
   overflow-x: hidden; }
 
-.cube-container {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  background-image: url("../img/shakexblue.jpg");
-  background-size: 50%;
-  background-attachment: fixed;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 70px;
-  perspective: 20em;
-  perspective-origin: 50% calc(50% - 8em); }
-  .cube-container button {
-    position: absolute;
-    left: .5em;
-    top: 0;
-    text-align: center;
-    font-size: 3.5rem;
-    border: none;
-    box-shadow: 3px 3px 5px 5px rgba(104, 102, 102, 0.712), -5px -5px 5px 5px rgba(160, 159, 159, 0.589);
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    padding: 5px;
-    background: #0505a89d;
-    transition: all 1s; }
-    .cube-container button a {
-      background-image: linear-gradient(90deg, #fcfc9f, rgba(124, 225, 243, 0.192), skyblue);
-      background-size: 400%;
-      background-position: left;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-decoration: none;
-      animation: linkAinimation 5s linear infinite alternate; }
-    .cube-container button:hover {
-      transition: all 1s ease;
-      animation: none;
-      background-clip: text;
-      -webkit-background-clip: text; }
-
-@keyframes linkAinimation {
-  100% {
-    background-position: right; } }
-    .cube-container button:hover {
-      box-shadow: inset 3px 3px 5px 5px rgba(255, 255, 255, 0.37), inset -3px -3px 5px 3px rgba(255, 255, 255, 0.596); }
-  .cube-container::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.689);
-    width: 100%;
-    height: 100%; }
-  .cube-container .scene {
-    position: relative;
-    transform-style: preserve-3d;
-    animation: sceneRotate 10s infinite linear; }
-
-@keyframes sceneRotate {
-  to {
-    transform: rotateY(360deg); } }
-  .cube-container .cube {
-    width: 2em;
-    height: 2em;
-    transform: preserve-3d;
-    position: absolute;
-    bottom: -1em;
-    left: -1em; }
-    .cube-container .cube .front,
-    .cube-container .cube .back,
-    .cube-container .cube .left,
-    .cube-container .cube .right {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: #1212f752;
-      box-shadow: 0 0 0.5em #000a inset;
-      pointer-events: none; }
-    .cube-container .cube .front {
-      transform: translateZ(1em); }
-    .cube-container .cube .right {
-      transform: rotateY(90deg) translateZ(1em); }
-    .cube-container .cube .back {
-      transform: rotateY(180deg) translateZ(1em); }
-    .cube-container .cube .left {
-      transform: rotateY(270deg) translateZ(1em); }
-    .cube-container .cube .top {
-      position: absolute;
-      width: 2em;
-      height: 2em;
-      background: rgba(4, 4, 252, 0.322);
-      transform: translateY(-50%) rotateX(90deg);
-      box-shadow: 0 0 0.5em #000a inset; }
-    .cube-container .cube .bottom {
-      position: absolute;
-      width: 2em;
-      height: 2em;
-      bottom: 0;
-      background: #000a;
-      transform: translateY(50%) rotateX(90deg);
-      box-shadow: 0 0 0.5em #000; }
-  .cube-container i {
-    position: absolute;
-    left: .5em;
-    bottom: .5em;
-    animation: iconRotate 5s linear infinite reverse;
-    color: skyblue;
-    transform: preserve-3d; }
-
-@keyframes iconRotate {
-  100% {
-    transform: rotateY(360deg); } }
-    .cube-container i:hover {
-      z-index: 200; }
-
 .parallax-1 {
   background: url("../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg") no-repeat;
   background-size: cover;
@@ -658,3 +540,125 @@ footer {
           margin: .3em auto;
           font-size: .7em;
           bottom: 0; }
+
+.cube-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/shakexblue.jpg");
+  background-size: 50%;
+  background-attachment: fixed;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  perspective: 20em;
+  perspective-origin: 50% calc(50% - 8em); }
+  .cube-container button {
+    position: absolute;
+    left: .5em;
+    top: 100px;
+    text-align: center;
+    font-size: 3.5rem;
+    border: none;
+    box-shadow: 3px 3px 5px 5px rgba(104, 102, 102, 0.712), -5px -5px 5px 5px rgba(160, 159, 159, 0.589);
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background: #0505a89d;
+    transition: all 1s; }
+    .cube-container button .btn-container {
+      position: relative; }
+      .cube-container button .btn-container i {
+        position: absolute; }
+    .cube-container button i {
+      background-image: linear-gradient(90deg, #fcfc9f, rgba(124, 225, 243, 0.192), skyblue);
+      background-size: 400%;
+      background-position: left;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: none;
+      animation: linkAinimation 5s linear infinite alternate; }
+    .cube-container button:hover {
+      transition: all 1s ease;
+      animation: none;
+      background-clip: text;
+      -webkit-background-clip: text; }
+
+@keyframes linkAinimation {
+  100% {
+    background-position: right; } }
+    .cube-container button:hover {
+      box-shadow: inset 3px 3px 5px 5px rgba(255, 255, 255, 0.37), inset -3px -3px 5px 3px rgba(255, 255, 255, 0.596); }
+  .cube-container::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.689);
+    width: 100%;
+    height: 100%; }
+  .cube-container .scene {
+    position: relative;
+    transform-style: preserve-3d;
+    animation: sceneRotate 10s infinite linear; }
+
+@keyframes sceneRotate {
+  to {
+    transform: rotateY(360deg); } }
+  .cube-container .cube {
+    width: 2em;
+    height: 2em;
+    transform: preserve-3d;
+    position: absolute;
+    bottom: -1em;
+    left: -1em; }
+    .cube-container .cube .front,
+    .cube-container .cube .back,
+    .cube-container .cube .left,
+    .cube-container .cube .right {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #1212f752;
+      box-shadow: 0 0 0.5em #000a inset;
+      pointer-events: none; }
+    .cube-container .cube .front {
+      transform: translateZ(1em); }
+    .cube-container .cube .right {
+      transform: rotateY(90deg) translateZ(1em); }
+    .cube-container .cube .back {
+      transform: rotateY(180deg) translateZ(1em); }
+    .cube-container .cube .left {
+      transform: rotateY(270deg) translateZ(1em); }
+    .cube-container .cube .top {
+      position: absolute;
+      width: 2em;
+      height: 2em;
+      background: rgba(4, 4, 252, 0.322);
+      transform: translateY(-50%) rotateX(90deg);
+      box-shadow: 0 0 0.5em #000a inset; }
+    .cube-container .cube .bottom {
+      position: absolute;
+      width: 2em;
+      height: 2em;
+      bottom: 0;
+      background: #000a;
+      transform: translateY(50%) rotateX(90deg);
+      box-shadow: 0 0 0.5em #000; }
+  .cube-container i {
+    position: absolute;
+    left: .5em;
+    bottom: .5em;
+    animation: iconRotate 5s linear infinite reverse;
+    color: skyblue;
+    transform: preserve-3d; }
+
+@keyframes iconRotate {
+  100% {
+    transform: rotateY(360deg); } }
+    .cube-container i:hover {
+      z-index: 200; }
