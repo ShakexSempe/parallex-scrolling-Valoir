@@ -479,7 +479,7 @@ footer {
       height: .5em;
       border-bottom-right-radius: 45%;
       border-bottom-left-radius: 45%;
-      box-shadow: 0px 20px 5px #00000023;
+      box-shadow: 0px 10px 1px rgba(167, 167, 167, 0.192), 0px 20px 5px #00000023;
       z-index: 3; }
     .nivea-container .nivea .lid {
       position: absolute;
