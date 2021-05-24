@@ -95,7 +95,6 @@ body {
   opacity: 0.5;
   overflow-x: hidden; }
 
-b
 .cube-container {
   position: relative;
   height: 100vh;
@@ -111,8 +110,7 @@ b
   font-size: 70px;
   perspective: 20em;
   perspective-origin: 50% calc(50% - 8em); }
-  b
-.cube-container button {
+  .cube-container button {
     position: absolute;
     left: .5em;
     top: 0;
@@ -125,8 +123,7 @@ b
     padding: 5px;
     background: #0505a89d;
     transition: all 1s; }
-    b
-.cube-container button a {
+    .cube-container button a {
       background-image: linear-gradient(90deg, #fcfc9f, rgba(124, 225, 243, 0.192), skyblue);
       background-size: 400%;
       background-position: left;
@@ -135,8 +132,7 @@ b
       -webkit-text-fill-color: transparent;
       text-decoration: none;
       animation: linkAinimation 5s linear infinite alternate; }
-    b
-.cube-container button:hover {
+    .cube-container button:hover {
       transition: all 1s ease;
       animation: none;
       background-clip: text;
@@ -145,11 +141,9 @@ b
 @keyframes linkAinimation {
   100% {
     background-position: right; } }
-    b
-.cube-container button:hover {
+    .cube-container button:hover {
       box-shadow: inset 3px 3px 5px 5px rgba(255, 255, 255, 0.37), inset -3px -3px 5px 3px rgba(255, 255, 255, 0.596); }
-  b
-.cube-container::before {
+  .cube-container::before {
     position: absolute;
     content: '';
     top: 0;
@@ -157,8 +151,7 @@ b
     background: rgba(0, 0, 0, 0.689);
     width: 100%;
     height: 100%; }
-  b
-.cube-container .scene {
+  .cube-container .scene {
     position: relative;
     transform-style: preserve-3d;
     animation: sceneRotate 10s infinite linear; }
@@ -166,50 +159,39 @@ b
 @keyframes sceneRotate {
   to {
     transform: rotateY(360deg); } }
-  b
-.cube-container .cube {
+  .cube-container .cube {
     width: 2em;
     height: 2em;
     transform: preserve-3d;
     position: absolute;
     bottom: -1em;
     left: -1em; }
-    b
-.cube-container .cube .front,
-    b
-.cube-container .cube .back,
-    b
-.cube-container .cube .left,
-    b
-.cube-container .cube .right {
+    .cube-container .cube .front,
+    .cube-container .cube .back,
+    .cube-container .cube .left,
+    .cube-container .cube .right {
       position: absolute;
       width: 100%;
       height: 100%;
       background: #1212f752;
       box-shadow: 0 0 0.5em #000a inset;
       pointer-events: none; }
-    b
-.cube-container .cube .front {
+    .cube-container .cube .front {
       transform: translateZ(1em); }
-    b
-.cube-container .cube .right {
+    .cube-container .cube .right {
       transform: rotateY(90deg) translateZ(1em); }
-    b
-.cube-container .cube .back {
+    .cube-container .cube .back {
       transform: rotateY(180deg) translateZ(1em); }
-    b
-.cube-container .cube .left {
+    .cube-container .cube .left {
       transform: rotateY(270deg) translateZ(1em); }
-    b
-.cube-container .cube .top {
+    .cube-container .cube .top {
       position: absolute;
       width: 2em;
       height: 2em;
       background: rgba(4, 4, 252, 0.322);
       transform: translateY(-50%) rotateX(90deg);
       box-shadow: 0 0 0.5em #000a inset; }
-    b
-.cube-container .cube .bottom {
+    .cube-container .cube .bottom {
       position: absolute;
       width: 2em;
       height: 2em;
@@ -217,8 +199,7 @@ b
       background: #000a;
       transform: translateY(50%) rotateX(90deg);
       box-shadow: 0 0 0.5em #000; }
-  b
-.cube-container i {
+  .cube-container i {
     position: absolute;
     left: .5em;
     bottom: .5em;
@@ -229,8 +210,7 @@ b
 @keyframes iconRotate {
   100% {
     transform: rotateY(360deg); } }
-    b
-.cube-container i:hover {
+    .cube-container i:hover {
       z-index: 200; }
 
 .parallax-1 {
