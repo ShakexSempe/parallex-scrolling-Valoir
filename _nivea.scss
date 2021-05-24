@@ -79,6 +79,8 @@
         border-top-right-radius: 50%;
         border-top-left-radius: 50%;
         z-index: 1;
+        box-shadow: inset 0px 0px 40px #000000;
+
 
         
     }
@@ -91,6 +93,8 @@
         width: 95%;
         height: 45%;
         z-index: 2;
+        box-shadow: inset 0px 0px 40px #000000;
+
         // border-bottom-right-radius: 15px;
         // border-bottom-left-radius: 15px;
 
@@ -147,12 +151,12 @@
     }
     .body-bottom {
         position: absolute;
-        top: 63%;
+        top: 62%;
         @media (min-height: 600px) {
-            top: 60%;
+            top: 59%;
         }
         @media (min-height: 700px){
-            top: 56%;
+            top: 55.5%;
         }
 
         left: 50%;
@@ -163,7 +167,9 @@
         z-index: 1;
         border-bottom-left-radius: 5%;
         border-bottom-right-radius: 5%;
-        border-bottom: 1px solid rgb(0, 0, 0);
+        border-bottom: 10px solid rgb(0, 0, 0);
+        box-shadow: inset 0px 0px 40px #000000,
+                    inset 10px -10px 20px rgba(221, 221, 221, 0.158);
         display: flex;
         justify-content: space-between;
         align-items: center;

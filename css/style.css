@@ -499,7 +499,8 @@ footer {
       height: 2em;
       border-top-right-radius: 50%;
       border-top-left-radius: 50%;
-      z-index: 1; }
+      z-index: 1;
+      box-shadow: inset 0px 0px 40px #000000; }
     .nivea-container .nivea .body-middle {
       position: absolute;
       top: 3.3em;
@@ -508,7 +509,8 @@ footer {
       background: #161616;
       width: 95%;
       height: 45%;
-      z-index: 2; }
+      z-index: 2;
+      box-shadow: inset 0px 0px 40px #000000; }
       .nivea-container .nivea .body-middle::after {
         position: absolute;
         content: '';
@@ -553,7 +555,7 @@ footer {
             color: #81835c; }
     .nivea-container .nivea .body-bottom {
       position: absolute;
-      top: 63%;
+      top: 62%;
       left: 50%;
       transform: translate(-50%);
       background: #161616;
@@ -562,16 +564,17 @@ footer {
       z-index: 1;
       border-bottom-left-radius: 5%;
       border-bottom-right-radius: 5%;
-      border-bottom: 1px solid black;
+      border-bottom: 10px solid black;
+      box-shadow: inset 0px 0px 40px #000000, inset 10px -10px 20px rgba(221, 221, 221, 0.158);
       display: flex;
       justify-content: space-between;
       align-items: center; }
       @media (min-height: 600px) {
         .nivea-container .nivea .body-bottom {
-          top: 60%; } }
+          top: 59%; } }
       @media (min-height: 700px) {
         .nivea-container .nivea .body-bottom {
-          top: 56%; } }
+          top: 55.5%; } }
       .nivea-container .nivea .body-bottom .logo-container {
         position: absolute;
         height: 50%;
