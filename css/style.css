@@ -458,7 +458,8 @@ footer {
   display: grid;
   place-items: center;
   font-size: 30px;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  background: #f4f4f4; }
   .nivea-container .nivea {
     height: 95%;
     width: 80%;
