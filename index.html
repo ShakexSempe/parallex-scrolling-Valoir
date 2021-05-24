@@ -11,35 +11,8 @@
 </head>
 
 <body>
-
-    <section class="nivea-container">
-        <div class="nivea">
-            <div class="top"></div>
-            <div class="lid"></div>
-            <div class="body-top"></div>
-            <div class="body-middle">
-                <div class="content">
-                    <p>Nivea</p>
-                    <p><span>Men</span></p>
-                </div>
-            </div>
-            <div class="body-bottom">
-                <div class="logo-container">
-                    <div class="logo">
-                        <div class="ball">
-                            <div class="small-ball-1"></div>
-                            <div class="small-ball-2"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer">
-                    <div class="head">Shakex Sempe</div>
-                    <div class="body">Cleansing</div>
-                    <div class="foot" id="date"></di>
-                </div>
-            </div>
-        </div>
-    </section>
+    
+    
     
 <section class="container">
         <div class="parallax parallax-1">
@@ -107,6 +80,35 @@
         </article> 
     </div>
 
+    <section class="nivea-container">
+        <div class="nivea">
+            <div class="top"></div>
+            <div class="lid"></div>
+            <div class="body-top"></div>
+            <div class="body-middle">
+                <div class="content">
+                    <p>Nivea</p>
+                    <p><span>Men</span></p>
+                </div>
+            </div>
+            <div class="body-bottom">
+                <div class="logo-container">
+                    <div class="logo">
+                        <div class="ball">
+                            <div class="small-ball-1"></div>
+                            <div class="small-ball-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="head">Shakex Sempe</div>
+                    <div class="body">Front End Developer</div>
+                    <div class="foot" id="date"></di>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
     <section id="box" class="cube-container">
         <div class="scene">
@@ -142,12 +144,14 @@
 
 <footer>
     <p>Copyright&copy; Shakex Sempe :</p>
-    <p id="date"></p>
+    <p id="footer"></p>
 </footer>
 
     <script>
         let date = document.getElementById('date');
+        let footer = document.getElementById('footer');
         date.innerHTML = new Date().getFullYear();
+        footer.innerHTML = new Date().getFullYear();
     </script>
 
     <script src="scroll.js"></script>
