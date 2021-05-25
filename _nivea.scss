@@ -81,6 +81,8 @@
         z-index: 1;
         box-shadow: inset 0px 0px 40px #000000;
 
+        
+
 
         
     }
@@ -94,6 +96,64 @@
         height: 45%;
         z-index: 2;
         box-shadow: inset 0px 0px 40px #000000;
+
+        .curves-left {
+            position: absolute;
+            width: 2em;
+            height: 2em;
+            top: 2em;
+            left: -1.9em;
+            background: #d8d7d7;
+            border-radius: .5em;
+
+            &:before {
+                position: absolute;
+                content: '';
+                width: 2em;
+                height: 2em;
+                top: 2.5em;
+                background: #d8d7d7;
+                border-radius: .5em;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                width: 2em;
+                height: 2em;
+                top: 5em;
+                background: #d8d7d7;
+                border-radius: .5em;
+            }
+        }
+
+        .curves-right {
+            position: absolute;
+            width: 2em;
+            height: 2em;
+            top: 2em;
+            right: -1.9em;
+            background: #d8d7d7;
+            border-radius: .5em;
+
+            &:before {
+                position: absolute;
+                content: '';
+                width: 2em;
+                height: 2em;
+                top: 2.5em;
+                background: #d8d7d7;
+                border-radius: .5em;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                width: 2em;
+                height: 2em;
+                top: 5em;
+                background: #d8d7d7;
+                border-radius: .5em;
+            }
+        }
 
         // border-bottom-right-radius: 15px;
         // border-bottom-left-radius: 15px;

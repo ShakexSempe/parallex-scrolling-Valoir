@@ -393,6 +393,54 @@ footer {
       height: 45%;
       z-index: 2;
       box-shadow: inset 0px 0px 40px #000000; }
+      .nivea-container .nivea .body-middle .curves-left {
+        position: absolute;
+        width: 2em;
+        height: 2em;
+        top: 2em;
+        left: -1.9em;
+        background: #d8d7d7;
+        border-radius: .5em; }
+        .nivea-container .nivea .body-middle .curves-left:before {
+          position: absolute;
+          content: '';
+          width: 2em;
+          height: 2em;
+          top: 2.5em;
+          background: #d8d7d7;
+          border-radius: .5em; }
+        .nivea-container .nivea .body-middle .curves-left:after {
+          position: absolute;
+          content: '';
+          width: 2em;
+          height: 2em;
+          top: 5em;
+          background: #d8d7d7;
+          border-radius: .5em; }
+      .nivea-container .nivea .body-middle .curves-right {
+        position: absolute;
+        width: 2em;
+        height: 2em;
+        top: 2em;
+        right: -1.9em;
+        background: #d8d7d7;
+        border-radius: .5em; }
+        .nivea-container .nivea .body-middle .curves-right:before {
+          position: absolute;
+          content: '';
+          width: 2em;
+          height: 2em;
+          top: 2.5em;
+          background: #d8d7d7;
+          border-radius: .5em; }
+        .nivea-container .nivea .body-middle .curves-right:after {
+          position: absolute;
+          content: '';
+          width: 2em;
+          height: 2em;
+          top: 5em;
+          background: #d8d7d7;
+          border-radius: .5em; }
       .nivea-container .nivea .body-middle::after {
         position: absolute;
         content: '';
