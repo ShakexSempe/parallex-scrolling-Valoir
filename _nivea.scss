@@ -73,7 +73,8 @@
         top: 1.8em;
         left: 50%;
             transform: translate(-50%);
-        background: #242424;
+            background-image: linear-gradient(50deg, #000, #333, #161616, #242424, #000);
+        // background: #242424;
         width: 95%;
         height: 2em;
         border-top-right-radius: 50%;
@@ -221,7 +222,8 @@
 
         left: 50%;
             transform: translate(-50%);
-        background: #161616;
+            background-image: linear-gradient(0deg, #000, #111, #161616);
+        // background: #161616;
         width: 95%;
         height: 40%;
         z-index: 1;
