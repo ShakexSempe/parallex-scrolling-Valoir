@@ -9,10 +9,13 @@ $fw-bold: 700;
 $clr: #3f5a87;
 $crimson: #dc143c46;
 $clr-trans: #25447a6e;
-$clr-gradient: radial-gradient( $clr-trans, rgba(0, 0, 0, 0.368));
-$crimson-gradient: radial-gradient( $crimson, rgb(0, 0, 0));
+$clr-gradient: radial-gradient( $clr-trans, rgba(0, 0, 0, 1));
+$crimson-gradient: radial-gradient( $crimson, rgba(0,0,0, 1));
 $background: #000;
 $dark-overlay-gradient: radial-gradient( #000, rgba(0, 0, 0, 0.253) );
+
+$text-dark: #000;
+$text-light: #ddd;
 
 $spacer: 1em;
 $radius-sm: 5px;

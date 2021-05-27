@@ -54,7 +54,7 @@
         background-image: url(https://images.unsplash.com/photo-1569389397653-c04fe624e663?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);
         background-size: cover;
         background-blend-mode: overlay;
-        color: #eee; }
+        color: #ddd; }
       .parallax-card .card .card_content .card_front {
         background-color: #3f5a87; }
         .parallax-card .card .card_content .card_front::after {
@@ -64,7 +64,7 @@
           left: 0;
           width: 100%;
           height: 100%;
-          background-image: radial-gradient(#25447a6e, rgba(0, 0, 0, 0.368)); }
+          background-image: radial-gradient(#25447a6e, black); }
         .parallax-card .card .card_content .card_front .card_title {
           font-size: 3.5em;
           letter-spacing: .15em;
@@ -103,7 +103,6 @@
           border-radius: 5px; }
       .parallax-card .card .card_content .card_back {
         transform: rotateY(0.5turn);
-        color: #ddd;
         border: 2px solid rgba(221, 221, 221, 0.219);
         background-color: rgba(0, 0, 0, 0.553); }
         .parallax-card .card .card_content .card_back .card_body {
