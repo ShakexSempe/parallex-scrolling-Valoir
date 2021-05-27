@@ -267,7 +267,7 @@
                 width: 2em;
                 height: 2em;
                 border-radius: 50%;
-                background-image: radial-gradient(navy, #000, );
+                background-image: radial-gradient(#81835c, navy 30% , #000, );
                 position: relative;
                 left: 50%;
                 top: 50%;
@@ -275,7 +275,8 @@
                 transform: translate(-50%, -50%);
                 outline: 1px dashed rgba(221, 221, 221, 0.13);
                 outline-offset: .2em;
-                box-shadow: 0 0 4px #81835c, 
+                box-shadow: 0 0 2px #fff,
+                            0 0 4px #81835c, 
                             0 0 20px rgba(135, 207, 235, 0.63), 
                             0 0 40px #81835c,
                             0 10px 60px rgba(135, 207, 235, 0.63),
