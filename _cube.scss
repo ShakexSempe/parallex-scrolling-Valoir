@@ -14,6 +14,33 @@
     perspective: 20em;
     perspective-origin: 50% calc(50% - 8em);
 
+    .bird {
+        position: absolute;
+        bottom: 2em;
+        left: 60%;
+
+        i {
+            animation: fly 10s ease-out infinite;
+            z-index: 900;
+
+            @keyframes fly {
+                0%,20%,40%,60%,80%{
+                    transform: scale(1.5);
+                    transform: rotateY(.05turn) rotateX(.05turn);
+                    
+                }
+                5%, 10%, 30%,50%,70%,90%{
+                    transform: scale(1);
+                    transform: rotateY(.1turn);
+                }
+                50% {
+                    margin-bottom: 5em;
+                    animation-timing-function: ease-in;
+                }
+            }
+        }
+    }
+
     button {
         position: absolute;
         left: .5em;

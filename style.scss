@@ -163,6 +163,12 @@ body {
         overflow-x: hidden;
         animation: scale 40s linear infinite alternate;
 
+        @keyframes scale {
+            100% {
+                background-position: 90%;
+            }
+        }
+
     }
 
     article {
