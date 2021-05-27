@@ -44,6 +44,7 @@
             border-radius: $radius-md;
             transform-style: preserve-3d;
             color: #fff;
+            
 
             .card_front,
             .card_back {
@@ -157,7 +158,7 @@
         }
         &:hover .card_content {
             transform: rotateY(.5turn);
-        }   
+        } 
     }
 
 }

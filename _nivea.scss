@@ -63,7 +63,8 @@
                 left: .5em;
                 width: 1px;
                 height: 100%;
-                background-color: rgba(92, 90, 90, 0.589);
+                background-color: rgba(92, 90, 90, 0.889);
+                box-shadow: 10px 0 10px rgba(0, 0, 0, 0.774), -3px 0 5px #fff;
 
             }
     }
@@ -184,7 +185,7 @@
         }
 
         .content {
-            position: absolute;
+            position: relative;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -200,6 +201,27 @@
             justify-content: center;
             outline: 1px solid rgba(221, 221, 221, 0.089);
             outline-offset: .2em;
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: -3em;
+                left: -200%;
+                background-image: linear-gradient(90deg, transparent,  rgba(221, 221, 221, 0.048), transparent);
+                background-size: contain;
+                background-position: left;
+                border-radius: 20%;
+                width: 100%;
+                height: 20em;
+                transform: skewX(20deg);
+                animation: reflect 5s linear infinite;
+
+                @keyframes reflect {
+                    100% {
+                        left: 200%;
+                    }
+                }
+            }
 
             p {
                 font-size: 1.7em;
