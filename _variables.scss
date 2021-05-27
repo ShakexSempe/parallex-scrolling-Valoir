@@ -1,0 +1,24 @@
+$level-one: translateZ(3rem);
+$level-two: translateZ(6rem);
+$level-three: translateZ(9rem);
+
+$fw-thin: 200;
+$fw-normal: 400;
+$fw-bold: 700;
+
+$clr: #3f5a87;
+$crimson: #dc143c46;
+$clr-trans: #25447a6e;
+$clr-gradient: radial-gradient( $clr-trans, rgba(0, 0, 0, 0.368));
+$crimson-gradient: radial-gradient( $crimson, rgb(0, 0, 0));
+$background: #000;
+$dark-overlay-gradient: radial-gradient( #000, rgba(0, 0, 0, 0.253) );
+
+$spacer: 1em;
+$radius-sm: 5px;
+$radius-md: 10px;
+$radius-lg: 15px;
+
+$border-sm: 1px solid #fff;
+$border-md: 3px solid #ddd;
+$border-sm: 5px solid #f4f4f4;

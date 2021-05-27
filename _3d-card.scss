@@ -1,0 +1,163 @@
+.parallax-card {
+    background: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        background-image: $dark-overlay-gradient;
+        // background: #000;
+        opacity: .8;
+        overflow-x: hidden;
+    }
+
+    .card {
+        width: 400px;
+        border-radius: $radius-sm;
+
+        @media (max-width: 400px) {
+            width: 90%;
+        }
+
+        background: transparent;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: $radius-md;
+
+        .card_content {
+            text-align: center;
+            position: relative;
+            transition: transform 3s;
+            border-radius: $radius-md;
+            transform-style: preserve-3d;
+            color: #fff;
+
+            .card_front,
+            .card_back {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 15em 3em;
+                backface-visibility: hidden;
+                transform-style: preserve-3d;
+                display: grid;
+                align-items: center;
+                border-radius: $radius-md;
+                background-image: url(https://images.unsplash.com/photo-1569389397653-c04fe624e663?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);
+                background-size: cover;
+                background-blend-mode: overlay;
+                color: #eee;
+            }
+
+            .card_front {
+                background-color: $clr;
+
+                &::after {
+                    position: inherit;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: $clr-gradient;
+                    
+                }
+
+                .card_title {
+                    font-size: 3.5em;
+                    letter-spacing: .15em;
+                    margin: 0 auto;
+                    width: 100%;
+                    position: absolute;
+                    top: 55%;
+
+                    @media (min-width: 400px) {
+                        font-size: 4.3em;
+                        letter-spacing: .25em;
+
+                    }
+
+                    @media(min-width: 768px) {
+                        font-size: 4.5em;
+                        letter-spacing: .22em;
+                        padding-left: 15px;
+
+                    }
+
+                    transform: $level-three;
+                    order: 2;
+                    text-transform: uppercase;
+                }
+
+                .card_subtitle {
+                    transform: $level-two;
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                    font-size: .75rem;
+                    font-weight: $fw-bold;
+                    opacity: .7;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: $spacer;
+                    bottom: $spacer;
+                    left: $spacer;
+                    right: $spacer;
+                    border: 3px solid #eee;
+                    transform: $level-one;
+                    border-radius: $radius-sm;
+
+                }
+            }
+            .card_back {
+                transform: rotateY(.5turn);
+                // background: radial-gradient(rgba(0, 0, 0, 0.39), #111);
+                color: #ddd;
+                border: 2px solid rgba(221, 221, 221, 0.219);
+                
+                .card_body {
+                    position: absolute;
+                    
+                    transform: $level-two;
+                    font-weight: $fw-normal;
+                    font-size: 1.4rem;
+                    line-height: 1.6;
+                }
+
+                background-color: rgba(0, 0, 0, 0.553);
+
+                &::after {
+                    position: inherit;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: $crimson-gradient;
+                    
+                }
+            }
+        }
+        &:hover .card_content {
+            transform: rotateY(.5turn);
+        }   
+    }
+
+}

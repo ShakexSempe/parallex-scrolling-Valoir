@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Play&family=Titillium+Web:wght@300&display=swap');
+@import 'variables';
+@import '3d-card';
 
 * {
     margin: 0;
@@ -9,7 +11,6 @@
 body {
     overflow-x: hidden;
     font-family: 'Play', sans-serif;
-
 
 }
 
@@ -193,38 +194,7 @@ body {
 
 }
 
-.parallax-1-1 {
-    background: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg') no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
 
-
-    h2 {
-        margin-bottom: 1.5em;
-
-    }
-
-    p {
-        font-size: 1.4em;
-        animation: text 20s linear infinite;
-        background: linear-gradient(30deg, rgb(255, 255, 255), rgb(186, 245, 247), rgb(255, 255, 255));
-        font-weight: 500;
-        background-size: 250%;
-        background-position: left;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-        @keyframes text {
-            50% {
-                background-position: right;
-            }
-
-        }
-    }
-
-}
 
 .parallax-2 {
     background: url('../img/jackson-hendry-eodA_8CTOFo-unsplash.jpg') no-repeat;
