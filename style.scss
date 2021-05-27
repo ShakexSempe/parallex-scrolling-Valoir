@@ -178,6 +178,7 @@ body {
         cursor: pointer;
         animation-delay: 2s;
         animation-fill-mode: forwards;
+        padding: .5em;
 
         @keyframes headZoom {
             100% {
@@ -189,6 +190,15 @@ body {
 
         p {
             color: #ddd;
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            font-size: 3em;
+        }
+        &:hover p{
+            transition: all 2s;
+            opacity: 1;
+            top: 3em;
         }
     }
 
