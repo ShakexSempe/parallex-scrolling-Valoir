@@ -100,6 +100,8 @@
         height: 45%;
         z-index: 2;
         box-shadow: inset 0px 0px 40px #000000;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
 
         .curves-left {
             position: absolute;
@@ -260,6 +262,31 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: -2.1em;
+            left: -.13em;
+            height: 100%;
+            background: #111;
+            box-shadow: inset 0px 0px 40px #00000033;
+            
+            width: .3em;
+            border-radius: 50%;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            top: -2.1em;
+            right: -.13em;
+            height: 100%;
+            background: #111;
+            box-shadow: inset 0px 0px 40px #00000033;
+            width: .3em;
+            border-radius: 50%;
+        }
 
         .logo-container {
             position: absolute;
