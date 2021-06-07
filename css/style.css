@@ -359,9 +359,31 @@ body {
 @keyframes para4 {
   50% {
     background-position: 50%; } }
-  .parallax-4 p {
-    text-shadow: 0 0 2px lightgreen;
-    font-size: 1.5em; }
+  .parallax-4 article {
+    cursor: pointer;
+    animation-fill-mode: forwards;
+    padding: .5em; }
+    .parallax-4 article h2 {
+      position: relative;
+      font-size: 4em;
+      margin-bottom: -1em;
+      transition: all 2s;
+      text-transform: uppercase; }
+    .parallax-4 article p {
+      text-shadow: 0 0 2px lightgreen;
+      font-size: 3em;
+      opacity: 0;
+      transition: all 2s; }
+      @media (min-width: 768px) {
+        .parallax-4 article p {
+          font-size: 3em; } }
+    .parallax-4 article:hover h2 {
+      transition: all 2s;
+      letter-spacing: .4em;
+      margin-bottom: .5em; }
+    .parallax-4 article:hover p {
+      transition: all 2s;
+      opacity: 1; }
 
 footer {
   width: 100vw;
