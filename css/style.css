@@ -254,7 +254,8 @@ body {
     .parallax-1 article p {
       color: #ddd;
       font-size: 3em;
-      opacity: 0; }
+      opacity: 0;
+      transition: all 2s; }
       @media (min-width: 768px) {
         .parallax-1 article p {
           font-size: 2em; } }
