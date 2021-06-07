@@ -156,17 +156,14 @@
 
 <footer>
     <p>Copyright&copy; Shakex Sempe :</p>
-    <p id="footer-date"></p>
+    <p id="date"></p>
 </footer>
 
-    <script>
-        let date = document.getElementById('date');
-        date.innerHTML = new Date().getFullYear();
-        let footer = document.getElementById('footer-date');
-    footer.innerHTML = new Date().getFullYear();
-    </script>
-
     <script src="scroll.js"></script>
+    <script>
+        const date = document.getElementById('date');
+        date.innerHTML = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
