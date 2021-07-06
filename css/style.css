@@ -140,7 +140,9 @@
       .social-media .sci {
         flex-direction: column; } }
     .social-media .sci li {
-      list-style: none; }
+      list-style: none;
+      position: sticky;
+      top: 1em; }
       .social-media .sci li::before {
         content: attr(data-text);
         position: absolute;
@@ -173,15 +175,13 @@
         perspective: 500px;
         box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1), inset 5px 5px 5px #ddda, inset -5px -5px 5px #000a;
         transition: .5s; }
-        .social-media .sci li a .js-tilt-glare {
-          border-radius: 10px; }
         .social-media .sci li a i {
           position: relative; }
           .social-media .sci li a i.fab {
             transition: .2s; }
         .social-media .sci li a:hover i.fab {
           color: #ddd;
-          transform: scale(1.05) translateZ(50px); }
+          transform: scale(1.02) translateZ(50px) rotateY(30deg); }
         .social-media .sci li a:hover.github {
           background: #333a; }
         .social-media .sci li a:hover.instagram {
@@ -403,7 +403,7 @@ body {
   margin: 1em 0; }
   @media (max-width: 400px) {
     .parallax-2 {
-      margin: 4em 0; } }
+      margin: 2em 0; } }
   .parallax-2::before {
     content: '';
     font-size: 5em;

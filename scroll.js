@@ -19,20 +19,24 @@ observer.observe(box);
 
 
 //social icons tilt
-let list = document.querySelectorAll('.sci li');
+let list = document.querySelectorAll('.sci li a');
 let links = document.querySelectorAll('.sci li a');
 let bg = document.querySelector('.social-media');
 
-links.forEach(element => {
-    element.addEventListener('mouseover', (event) => {
-        let color = event.target.getAttribute('data-color');
-        bg.style.backgroundColor = color;
-    });
+// links.forEach(element => {
+//     element.addEventListener('mouseover', (event) => {
+//         let color = event.target.getAttribute('data-color');
+//         bg.style.backgroundColor = color;
+//     });
+// });
+
+list.forEach(element => {
     element.addEventListener('mouseenter', (event) => {
         let color = event.target.getAttribute('data-color');
         bg.style.backgroundColor = color;
     });
+    
     element.addEventListener('mouseleave', (event) => {
         bg.style.backgroundColor = '#fff';
-    })
+    });
 })

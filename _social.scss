@@ -17,6 +17,8 @@
 
         li {
             list-style: none;
+            position: sticky;
+            top: 1em;
             &::before {
                 content: attr(data-text);
                 position: absolute;
@@ -61,22 +63,20 @@
                             inset -5px -5px 5px #000a;
                 transition: .5s;
 
-                .js-tilt-glare {
-                    border-radius: 10px;
-                }
                 
                 i {
                     position: relative;
                     &.fab {
                         transition: .2s;
+                        
                     }
                 }
                 
                 &:hover {
-                    i {
+                    i { 
                         &.fab{
                             color: #ddd;
-                            transform: scale(1.05) translateZ(50px);
+                            transform: scale(1.02) translateZ(50px) rotateY(30deg);
                         }
                     }
                     &.github {
