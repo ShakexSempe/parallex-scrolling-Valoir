@@ -20,8 +20,14 @@ observer.observe(box);
 
 //social icons tilt
 let list = document.querySelectorAll('.sci li');
+let links = document.querySelectorAll('.sci li a');
 let bg = document.querySelector('.social-media');
-list.forEach(element => {
+
+links.forEach(element => {
+    element.addEventListener('mouseover', (event) => {
+        let color = event.target.getAttribute('data-color');
+        bg.style.backgroundColor = color;
+    });
     element.addEventListener('mouseenter', (event) => {
         let color = event.target.getAttribute('data-color');
         bg.style.backgroundColor = color;
