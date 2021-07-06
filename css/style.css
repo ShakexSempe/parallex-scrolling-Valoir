@@ -245,12 +245,14 @@ body {
     background-position: 90%; } }
   .parallax-1 article {
     cursor: pointer;
-    animation-fill-mode: forwards;
-    background: none; }
+    height: auto;
+    overflow: hidden; }
     .parallax-1 article h2 {
+      position: relative;
+      transform: translateY(50%);
       backdrop-filter: blur(0.2em);
       -webkit-backdrop-filter: blur(0.2em);
-      padding: .2em 0;
+      padding: 1em 0;
       transition: 1s ease; }
       @media (min-width: 768px) {
         .parallax-1 article h2 {
@@ -281,15 +283,17 @@ body {
     .parallax-1 article:hover h2::after {
       opacity: 1; }
     .parallax-1 article p {
-      position: absolute;
+      position: relative;
       left: 50%;
       color: #ddd;
       font-size: 3em;
       padding: .5em;
       width: 100%;
       opacity: 0;
+      padding-bottom: 1em;
       transition: 2s ease;
-      transform: translateX(-50%); }
+      transform: translateX(-50%) translateY(-50%);
+      z-index: -1; }
       @media (min-width: 768px) {
         .parallax-1 article p {
           font-size: 1.3em; } }
@@ -305,9 +309,9 @@ body {
         box-shadow: inset 5px 5px 10px #000a, inset -5px -5px 10px #ddda;
         transition: .1s ease; }
     .parallax-1 article:hover h2 {
-      transform: translateY(-3em); }
+      transform: translateY(0); }
     .parallax-1 article:hover p {
-      transform: translateY(2.5em) translateX(-50%);
+      transform: translateX(-50%);
       left: 50%;
       opacity: 1; }
       .parallax-1 article:hover p::after {
@@ -483,7 +487,6 @@ footer {
     .cube-container a {
       font-size: 2rem; }
   .parallax article {
-    height: auto;
     width: 80%; }
     .parallax article h2 {
       font-size: 1.7em; }
@@ -1004,7 +1007,6 @@ footer {
     .cube-container a {
       font-size: 2rem; }
   .parallax article {
-    height: auto;
     width: 80%; }
     .parallax article h2 {
       font-size: 1.7em; }
