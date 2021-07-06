@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .5s;
 
     .sci {
         position: relative;
@@ -59,6 +60,10 @@
                             inset 5px 5px 5px #ddda,
                             inset -5px -5px 5px #000a;
                 transition: .5s;
+
+                .js-tilt-glare {
+                    border-radius: 10px;
+                }
                 
                 i {
                     position: relative;
@@ -71,6 +76,7 @@
                     i {
                         &.fab{
                             color: #ddd;
+                            transform: scale(1.05) translateZ(50px);
                         }
                     }
                     &.github {

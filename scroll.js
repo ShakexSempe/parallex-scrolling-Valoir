@@ -16,3 +16,17 @@ const observer =  new IntersectionObserver(scroll, {
 
 
 observer.observe(box);
+
+
+//social icons tilt
+let list = document.querySelectorAll('.sci li');
+let bg = document.querySelector('.social-media');
+list.forEach(element => {
+    element.addEventListener('mouseenter', (event) => {
+        let color = event.target.getAttribute('data-color');
+        bg.style.backgroundColor = color;
+    });
+    element.addEventListener('mouseleave', (event) => {
+        bg.style.backgroundColor = '#fff';
+    })
+})

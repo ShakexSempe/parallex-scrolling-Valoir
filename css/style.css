@@ -131,7 +131,8 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  transition: .5s; }
   .social-media .sci {
     position: relative;
     display: flex; }
@@ -172,12 +173,15 @@
         perspective: 500px;
         box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1), inset 5px 5px 5px #ddda, inset -5px -5px 5px #000a;
         transition: .5s; }
+        .social-media .sci li a .js-tilt-glare {
+          border-radius: 10px; }
         .social-media .sci li a i {
           position: relative; }
           .social-media .sci li a i.fab {
             transition: .2s; }
         .social-media .sci li a:hover i.fab {
-          color: #ddd; }
+          color: #ddd;
+          transform: scale(1.05) translateZ(50px); }
         .social-media .sci li a:hover.github {
           background: #333a; }
         .social-media .sci li a:hover.instagram {
