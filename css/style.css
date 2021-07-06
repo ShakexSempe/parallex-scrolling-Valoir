@@ -245,8 +245,25 @@ body {
     background-position: 90%; } }
   .parallax-1 article {
     cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 10px;
     height: auto;
     overflow: hidden; }
+    .parallax-1 article::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: inset 5px 5px 5px #ddda, inset -5px -5px 5px #000a;
+      opacity: 0;
+      transition: 1s ease; }
+    .parallax-1 article:hover::after {
+      opacity: 1;
+      transition: 5s ease; }
     .parallax-1 article h2 {
       position: relative;
       transform: translateY(50%);
@@ -264,21 +281,11 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        border-radius: 5px;
+        border-radius: 10px;
         box-shadow: inset 3px 3px 10px #ddda, inset -3px -3px 10px #000a;
-        transition: 1s ease; }
-      .parallax-1 article h2::after {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        border-radius: 5px;
-        box-shadow: inset 5px 5px 10px #ddda, inset -5px -5px 10px #000a;
-        transition: 1s ease; }
+        transition: 1s ease-in; }
     .parallax-1 article:hover h2::before {
+      transition: 1s ease-out;
       opacity: 0; }
     .parallax-1 article:hover h2::after {
       opacity: 1; }
@@ -288,10 +295,11 @@ body {
       color: #ddd;
       font-size: 3em;
       padding: .5em;
+      background: rgba(0, 0, 0, 0.329);
       width: 100%;
       opacity: 0;
       padding-bottom: 1em;
-      transition: 2s ease;
+      transition: 1s ease-out;
       transform: translateX(-50%) translateY(-50%);
       z-index: -1; }
       @media (min-width: 768px) {
@@ -306,7 +314,6 @@ body {
         height: 100%;
         opacity: 0;
         border-radius: 5px;
-        box-shadow: inset 5px 5px 10px #000a, inset -5px -5px 10px #ddda;
         transition: .1s ease; }
     .parallax-1 article:hover h2 {
       transform: translateY(0); }
