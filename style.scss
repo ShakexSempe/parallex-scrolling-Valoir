@@ -227,17 +227,56 @@ body {
     }
 
     article {
+        padding: .5em;
+        border-radius: 10px;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            box-shadow: inset 4px 4px 5px #ddda,
+                        inset -4px -4px 5px #000a;
+            transition: 1s ease;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            border-radius: 5px;
+            box-shadow: inset 4px 4px 5px #000a,
+                        inset -4px -4px 5px #ddda;
+            transition: 1s ease;
+        }
         h2 {
             margin-bottom: 1em;
         }
 
         p {
             font-size: 1.4em;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 0;
+                cursor: pointer;
+            }
+            &::after {
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
 
         }
     }
 
-}
+
 
 .parallax-3 {
     background: url('../img/qusv-yang-EFsactqua1g-unsplash.jpg') no-repeat;
