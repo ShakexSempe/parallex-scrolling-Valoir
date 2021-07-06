@@ -170,10 +170,12 @@
         font-size: 4em;
         transform-style: preserve-3d;
         perspective: 500px;
-        box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
-        transition: background .25s; }
-        .social-media .sci li a i.fab {
-          transition: .2s; }
+        box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1), inset 5px 5px 5px #ddda, inset -5px -5px 5px #000a;
+        transition: .5s; }
+        .social-media .sci li a i {
+          position: relative; }
+          .social-media .sci li a i.fab {
+            transition: .2s; }
         .social-media .sci li a:hover i.fab {
           color: #ddd; }
         .social-media .sci li a:hover.github {
