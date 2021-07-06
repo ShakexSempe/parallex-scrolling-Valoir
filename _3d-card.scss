@@ -54,6 +54,8 @@
                 left: 0;
                 right: 0;
                 padding: 15em 3em;
+                border-radius: 10px;
+                border: 1px solid #ddda;
                 backface-visibility: hidden;
                 transform-style: preserve-3d;
                 display: grid;
@@ -135,10 +137,10 @@
                 
                 .card_body {
                     position: absolute;
-                    
+                    padding: 0 .3em;
                     transform: $level-two;
                     font-weight: $fw-normal;
-                    font-size: 1.4rem;
+                    font-size: 1.2rem;
                     line-height: 1.6;
                 }
 
