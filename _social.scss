@@ -16,6 +16,27 @@
 
         li {
             list-style: none;
+            &::before {
+                content: attr(data-text);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, calc(-50% + 120px));
+
+                font-size: 13vw;
+                pointer-events: none;
+                font-weight: 700;
+                transition: .5s;
+                opacity: 0;
+            }
+            
+            &:hover {
+                &::before {
+                    opacity: .1;
+                    transform: translate(-50%, calc(-50% + 150px));
+
+                }
+            }
 
 
             a {
@@ -36,22 +57,34 @@
                 perspective: 500px;
                 box-shadow: 0 25px 35px rgba(0, 0, 0, .1);
                 transition: background .25s;
-
+                
+                i {
+                    &.fab {
+                        transition: .2s;
+                    }
+                }
+                
                 &:hover {
-
+                    i {
+                        &.fab{
+                            color: #ddd;
+                        }
+                    }
                     &.github {
                         background: #333a;
                     }
-                    &.facebook {
-                        background: #0099ff;
+                    &.instagram {
+                        background: #e4405f;
                     }
                     &.twitter {
                         background: #1877f2;
                     }
                     &.linkedin {
-                        background: #e4405f;
+                        background: #0099ff;
                     }
                 }
+                
+               
             }
         }
     }
