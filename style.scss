@@ -192,7 +192,7 @@ body {
             box-shadow: inset 5px 5px 5px #ddda,
                         inset -5px -5px 5px #000a;
             opacity: 0;
-            transition: 2s ease;
+            transition: .5s ease;
         }
         &:hover {
             &::after {

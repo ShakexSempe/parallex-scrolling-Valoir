@@ -339,7 +339,7 @@ body {
       height: 100%;
       box-shadow: inset 5px 5px 5px #ddda, inset -5px -5px 5px #000a;
       opacity: 0;
-      transition: 2s ease; }
+      transition: .5s ease; }
     .parallax-1 article:hover::after {
       opacity: 1;
       transition: .5s ease; }
