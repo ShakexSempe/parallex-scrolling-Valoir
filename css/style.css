@@ -185,13 +185,21 @@
           color: #ddd;
           transform: scale(1.02) translateZ(50px) rotateY(30deg); }
         .social-media .sci li a:hover.github {
-          background: #d69d33; }
-        .social-media .sci li a:hover.instagram {
-          background: #e4405f; }
+          background: #c9510c; }
+          .social-media .sci li a:hover.github i {
+            color: #f5f5f5; }
+        .social-media .sci li a:hover.fcc {
+          background: #0a0a23; }
+          .social-media .sci li a:hover.fcc i {
+            color: #f5f6f7; }
         .social-media .sci li a:hover.twitter {
-          background: #1877f2; }
+          background: #E1E8ED; }
+          .social-media .sci li a:hover.twitter i {
+            color: #1DA1F2; }
         .social-media .sci li a:hover.linkedin {
-          background: #0099ff; }
+          background: #ddd; }
+          .social-media .sci li a:hover.linkedin i {
+            color: #2867B2; }
 
 * {
   margin: 0;

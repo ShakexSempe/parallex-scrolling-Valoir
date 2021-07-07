@@ -81,16 +81,28 @@
                         }
                     }
                     &.github {
-                        background: #d69d33;
+                        background: #c9510c;
+                        i {
+                            color: #f5f5f5;
+                        }
                     }
-                    &.instagram {
-                        background: #e4405f;
+                    &.fcc {
+                        background: #0a0a23;
+                        i {
+                            color: #f5f6f7;
+                        }
                     }
                     &.twitter {
-                        background: #1877f2;
+                        background: #E1E8ED;
+                        i {
+                            color: #1DA1F2 ;
+                        }
                     }
                     &.linkedin {
-                        background: #0099ff;
+                        background: #ddd;
+                        i {
+                            color: #2867B2;
+                        }
                     }
                 }
                 
