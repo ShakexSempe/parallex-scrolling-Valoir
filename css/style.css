@@ -128,7 +128,8 @@
 .social-media {
   z-index: 10;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
+  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,10 +154,11 @@
         pointer-events: none;
         font-weight: 700;
         transition: .5s;
+        z-index: 10;
         opacity: 0; }
       .social-media .sci li:hover::before {
-        opacity: .1;
-        transform: translate(-50%, calc(-50% + 150px)); }
+        opacity: .4;
+        transform: translate(-50%); }
       .social-media .sci li a {
         position: relative;
         display: inline-block;
@@ -183,7 +185,7 @@
           color: #ddd;
           transform: scale(1.02) translateZ(50px) rotateY(30deg); }
         .social-media .sci li a:hover.github {
-          background: #333a; }
+          background: #d69d33; }
         .social-media .sci li a:hover.instagram {
           background: #e4405f; }
         .social-media .sci li a:hover.twitter {
@@ -329,10 +331,10 @@ body {
       height: 100%;
       box-shadow: inset 5px 5px 5px #ddda, inset -5px -5px 5px #000a;
       opacity: 0;
-      transition: 1s ease; }
+      transition: 2s ease; }
     .parallax-1 article:hover::after {
       opacity: 1;
-      transition: 5s ease; }
+      transition: .5s ease; }
     .parallax-1 article h2 {
       position: relative;
       transform: translateY(50%);
@@ -395,40 +397,13 @@ body {
         opacity: 1; }
 
 .parallax-2 {
-  background: url("../img/jackson-hendry-eodA_8CTOFo-unsplash.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: #f4f4f4;
   position: relative;
-  margin: 1em 0; }
+  margin: 0;
+  padding: 0; }
   @media (max-width: 400px) {
     .parallax-2 {
-      margin: 2em 0; } }
-  .parallax-2::before {
-    content: '';
-    font-size: 5em;
-    text-align: center;
-    color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    opacity: 1;
-    z-index: 10; }
-  .parallax-2::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg");
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    opacity: .2; }
+      margin: 0; } }
 
 .parallax-3 {
   background: url("../img/qusv-yang-EFsactqua1g-unsplash.jpg") no-repeat;
@@ -916,6 +891,7 @@ footer {
           text-align: center;
           width: 80%;
           margin: .3em auto;
+          text-transform: lowercase;
           font-size: .7em;
           bottom: 0; }
 
@@ -959,16 +935,12 @@ footer {
     text-align: center;
     font-size: 3.5rem;
     border: none;
-    box-shadow: 3px 3px 5px 5px rgba(104, 102, 102, 0.712), -5px -5px 5px 5px rgba(160, 159, 159, 0.589);
     border-radius: 10px;
-    border: 1px solid #ddd;
-    padding: 5px;
+    padding: 3px 10px;
     background: #0505a89d;
-    transition: all 1s; }
-    .cube-container button .btn-container {
-      position: relative; }
-      .cube-container button .btn-container i {
-        position: absolute; }
+    transition: all 1s;
+    text-transform: lowercase;
+    box-shadow: inset 3px 3px 5px #ddda,  inset -3px -3px #000a; }
     .cube-container button a {
       background-image: linear-gradient(90deg, #fcfc9f, rgba(124, 225, 243, 0.192), skyblue);
       background-size: 400%;
@@ -977,7 +949,8 @@ footer {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-decoration: none;
-      animation: linkAinimation 5s linear infinite alternate; }
+      animation: linkAinimation 5s linear infinite alternate;
+      margin: 0 auto; }
     .cube-container button:hover {
       transition: all 1s ease;
       animation: none;
