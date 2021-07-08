@@ -358,62 +358,130 @@ body {
     background-attachment: fixed;
 
     article {
-        transform: scale(0.8);
-        transition: all .2s ease-in-out;
-        background-image: linear-gradient(45deg, rgb(77, 74, 74), rgb(241, 242, 245));
-        background-position: left;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        height: 7em;
-        width: 7em;
-        border-radius: 100%;
+        transition: all .2s ease;
+        margin: 0 auto;
+        top: 1em;
+        height: 50vh;
+        width: 50vw;
+        background: #f4f4f4;
+        box-shadow: inset 3px 3px 5px #333a,
+                    inset -3px -3px 5px #000;
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 1px solid #ddd;
-            border-radius: 100%;
-            animation: pulse 2s infinite linear;
-            opacity: 0;
-            transform: scale(0.8);
-        }
+    //     &::before {
+    //         content: '';
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         width: 100%;
+    //         height: 100%;
+    //         border: 1px solid #ddd;
+    //         border-radius: 100%;
+    //         animation: pulse 2s infinite linear;
+    //         opacity: 0;
+    //         transform: scale(0.8);
+    //     }
 
-        @keyframes pulse {
-            10% {
-                opacity: 1;
-            }
+    //     @keyframes pulse {
+    //         10% {
+    //             opacity: 1;
+    //         }
 
-            100% {
-                transform: scale(1.12);
-                opacity: 0;
-            }
-        }
+    //         100% {
+    //             transform: scale(1.12);
+    //             opacity: 0;
+    //         }
+    //     }
 
-        i {
-            font-size: 6em;
-        }
+    //     &:hover {
+    //         transition: all .3s ease;
+    //         transform: scale(1);
+    //         // box-shadow: 2px 3px 2px #ddd;
 
+    //         border: none;
+
+    //         &::before {
+    //             display: none;
+    //         }
+    //     }
         &:hover {
-            transition: all .3s ease-in-out;
-            transform: scale(1);
-            box-shadow: 2px 3px 2px #ddd;
-
-            border: none;
-
-            &::before {
-                display: none;
+            transform: scale(.98);
+            a {
+                transform: scale(1.1);
             }
         }
     }
 
     a {
-        color: #fff;
+        margin: 0 auto;
         text-decoration: none;
+        display: grid;
+        place-items: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        padding: 0em;
+        position: relative;
+        color: #fff;
+        font-size: 2em;
+        transition: .5s ease;
+
+        
+
+            &::before {
+                position: absolute;
+                content: '\f0e0';
+                font-family: 'Font Awesome 5 Free';
+                color: #bb001b;
+
+                display: grid;
+                place-items: center;
+                font-weight: 700;
+                // background-color: red;
+                // padding: .5em;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                // z-index: 5;
+                border-radius: 100%;
+                box-shadow: inset 3px 3px 5px #000a,
+                inset -3px -3px 5px #ddda;
+                transition: 1s ease;
+            }
+            &::after {
+                position: absolute;
+                content: '\f2b6';
+                font-family: 'Font Awesome 5 Free';
+                color: #ea4335;
+
+                font-weight: 700;
+                display: grid;
+                place-items: center;
+                // font-size: 3em;
+                // background-color: red;
+                // padding: .5em;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                border-radius: 100%;
+                box-shadow: inset 3px 3px 5px #ddda,
+                inset -3px -3px 5px #000a;
+                transition: 1s ease;
+            }
+        
+        &:hover {
+            transition: 1s ease;
+            transform: scale(.98);
+            &::before {
+                opacity: 0;
+            }
+            &:after {
+                opacity: 1;
+            }
+        
+    }
     }
 
 }
