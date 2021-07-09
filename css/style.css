@@ -423,7 +423,7 @@ body {
     top: 1em;
     height: 50vh;
     width: 50vw;
-    background: #333;
+    background: #566C6C;
     border-radius: 10px;
     position: sticky;
     transition: .3s ease; }
@@ -443,7 +443,7 @@ body {
       height: 100%;
       border-radius: 10px;
       opacity: 1;
-      box-shadow: inset 10px 10px 10px #000a, inset -5px -5px 10px #ddda;
+      box-shadow: inset 10px 10px 10px #0B1410, inset -5px -5px 10px #ddda;
       transition: .5s ease; }
     .parallax-3 article::after {
       content: '\f2b6';
@@ -459,7 +459,7 @@ body {
       border-radius: 10px;
       color: rgba(221, 221, 221, 0.322);
       opacity: 0;
-      box-shadow: inset 10px 10px 10px #ddda, inset -10px -10px 10px #000;
+      box-shadow: inset 10px 10px 10px #ddda, inset -10px -10px 10px #0B1410;
       transition: .5s ease; }
     .parallax-3 article:hover {
       transform: scale(0.98); }
