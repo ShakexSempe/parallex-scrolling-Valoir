@@ -389,7 +389,7 @@ body {
       height: 100%;
       box-shadow: inset 5px 5px 5px #ddda, inset -5px -5px 5px #000a;
       opacity: 0;
-      transition: .5s ease; }
+      transition: 1s ease; }
     .parallax-1 article:hover::after {
       opacity: 1;
       transition: .5s ease; }
@@ -398,6 +398,7 @@ body {
       transform: translateY(50%);
       backdrop-filter: blur(0.2em);
       -webkit-backdrop-filter: blur(0.2em);
+      font-size: 1.5em;
       padding: 1em 0;
       transition: 1s ease; }
       @media (min-width: 768px) {
@@ -413,6 +414,8 @@ body {
         border-radius: 10px;
         box-shadow: inset 3px 3px 10px #ddda, inset -3px -3px 10px #000a;
         transition: 1s ease-in; }
+    .parallax-1 article:hover h2 {
+      letter-spacing: .1em; }
     .parallax-1 article:hover h2::before {
       transition: 1s ease-out;
       opacity: 0; }
@@ -641,8 +644,6 @@ footer {
       font-size: 2rem; }
   .parallax article {
     width: 80%; }
-    .parallax article h2 {
-      font-size: 1.7em; }
     .parallax article p {
       font-size: 0.8em; }
   .section-div {
@@ -658,11 +659,15 @@ footer {
     .section-div p {
       font-size: 0.6em;
       line-height: 2; }
+  .parallax-1 article {
+    width: 90%; }
   .parallax-2 article {
     height: auto;
     display: flex; }
     .parallax-2 article h2 {
       font-size: 1.3em; }
+  .parallax-4 article h2 {
+    font-size: 1.4em; }
   .parallax-4 article p {
     font-size: 1.2em;
     line-height: 1.6;
@@ -1154,8 +1159,6 @@ footer {
       font-size: 2rem; }
   .parallax article {
     width: 80%; }
-    .parallax article h2 {
-      font-size: 1.7em; }
     .parallax article p {
       font-size: 0.8em; }
   .section-div {
@@ -1171,11 +1174,15 @@ footer {
     .section-div p {
       font-size: 0.6em;
       line-height: 2; }
+  .parallax-1 article {
+    width: 90%; }
   .parallax-2 article {
     height: auto;
     display: flex; }
     .parallax-2 article h2 {
       font-size: 1.3em; }
+  .parallax-4 article h2 {
+    font-size: 1.4em; }
   .parallax-4 article p {
     font-size: 1.2em;
     line-height: 1.6;
