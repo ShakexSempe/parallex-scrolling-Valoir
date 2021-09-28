@@ -45,10 +45,12 @@
             border-radius: $radius-md;
             transform-style: preserve-3d;
             color: #fff;
+            // rotate transition on click
             &.rotate {
+                transition: 4s ease;
                 transform: rotateY(.5turn);
             }
-
+            // end of rotate transition on click
             .card_front,
             .card_back {
                 position: absolute;

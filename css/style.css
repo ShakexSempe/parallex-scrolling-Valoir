@@ -40,6 +40,7 @@
       transform-style: preserve-3d;
       color: #fff; }
       .parallax-card .card .card_content.rotate {
+        transition: 4s ease;
         transform: rotateY(0.5turn); }
       .parallax-card .card .card_content .card_front,
       .parallax-card .card .card_content .card_back {
