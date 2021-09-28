@@ -366,8 +366,11 @@ body {
     margin:  0;
     padding: 0;
     @media (max-width: 400px ){
-        margin: 0;
+        margin: 5vh 0;
     }
+    &::before {
+        display: none;
+    } 
     }
 
 
