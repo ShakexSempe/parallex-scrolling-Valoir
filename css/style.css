@@ -22,6 +22,7 @@
   .parallax-card .card {
     width: 400px;
     border-radius: 5px;
+    cursor: pointer;
     background: transparent;
     position: absolute;
     top: 10%;
@@ -38,6 +39,8 @@
       border-radius: 10px;
       transform-style: preserve-3d;
       color: #fff; }
+      .parallax-card .card .card_content.rotate {
+        transform: rotateY(0.5turn); }
       .parallax-card .card .card_content .card_front,
       .parallax-card .card .card_content .card_back {
         position: absolute;
@@ -122,8 +125,6 @@
           width: 100%;
           height: 100%;
           background-image: radial-gradient(#dc143c46, black); }
-    .parallax-card .card:hover .card_content {
-      transform: rotateY(0.5turn); }
 
 .social-media {
   z-index: 10;

@@ -25,6 +25,7 @@
     .card {
         width: 400px;
         border-radius: $radius-sm;
+        cursor: pointer;
 
         @media (max-width: 400px) {
             width: 90%;
@@ -44,7 +45,9 @@
             border-radius: $radius-md;
             transform-style: preserve-3d;
             color: #fff;
-            
+            &.rotate {
+                transform: rotateY(.5turn);
+            }
 
             .card_front,
             .card_back {
@@ -158,9 +161,9 @@
                 }
             }
         }
-        &:hover .card_content {
-            transform: rotateY(.5turn);
-        } 
+        // &:hover .card_content {
+        //     transform: rotateY(.5turn);
+        // } 
     }
 
 }
